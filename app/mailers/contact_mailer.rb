@@ -4,8 +4,8 @@ class ContactMailer < ActionMailer::Base
 
     apcvc_mail = "info.apcvc@gmail.com"
 
-    mail(to: apcvc_mail,
-         from: apcvc_mail,
+    mail(to:       apcvc_mail,
+         from:     ENV['SENDGRID_USERNAME'],
          reply_to: message.email,
          subject: "[APCVC WEB] #{message.subject}")
   end
