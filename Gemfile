@@ -4,6 +4,10 @@ group :doc do
   gem "sdoc", "~> 0.4.0", {:require=>false}
 end
 
+group :production do
+  gem "rails_12factor", "~> 0.0.2"
+end
+
 gem "rails", "~> 4.0.2"
 gem "sass-rails", "~> 4.0.1"
 gem "uglifier", "~> 2.4.0"
