@@ -1,0 +1,17 @@
+.album {
+  margin: 15px 50px;
+  @include border-radius(15px);
+  padding: 20px;
+  border: 2px solid #A8382D;
+  background-color: rgba(6, 26, 88, 0.2);
+  display: inline-block;
+
+  .photo{
+    @include border-radius(4px);
+    padding: 5px 5px 12px 5px;
+    background-color: white;
+    width:  auto;
+    height: 50px;
+    border: 1px solid black;
+  }
+}

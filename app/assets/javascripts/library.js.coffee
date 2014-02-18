@@ -1,0 +1,2 @@
+jQuery ->
+  $('#library-table').dataTable()

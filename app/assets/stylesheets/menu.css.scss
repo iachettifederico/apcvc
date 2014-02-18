@@ -1,0 +1,74 @@
+$item-width:  90px;
+$item-height: 40px;
+
+#menu{
+  @import "compass/reset";
+  width: 10px + (11 * ($item-width + 6px));
+  margin: 5px auto;
+
+  padding: 0;
+  font: 14px Georgia, serif;
+
+  a {
+    text-decoration: none;
+  }
+
+  .slide-up-boxes a {
+    display: block;
+    float: left;
+    margin: 0 2px;
+    background: rgba(215, 215, 215, 0.5);
+    border: 1px solid #ccc;
+    height: $item-height;
+    overflow: hidden;
+    width: $item-width;
+    @include border-radius(2px);
+  }
+
+  .slide-up-boxes span {
+    color: #333;       
+    display: table-cell; 
+    vertical-align: middle;    
+    text-align: center;                      
+    height: $item-height;
+    font: italic 15px/20px Georgia, Serif;    /* Vertically center text by making line height equal to height */
+    opacity: 1;
+    width: $item-width;
+    @include single-transition(all 0.15s linear);
+  }
+
+  .slide-up-boxes a:hover span {
+    margin-top: - $item-height;
+    @include single-transition(all 0.15s linear);
+    opacity: 0;
+  }
+
+  .slide-up-boxes div {
+    position: relative;      
+    color: white;
+    font: 14,5px Georgia, Serif;
+    height: $item-height; 
+    padding: 6px;           
+    vertical-align: middle;    
+    text-align: center;
+    opacity: 0;      
+    @include single-transition(all 0.15s linear);
+    @include rotate(10deg);
+  }
+  .slide-up-boxes a:hover div {
+    opacity: 1;
+    margin-top: - $item-height;
+    @include rotate(0deg);
+  }
+
+  .slide-up-boxes a:nth-child(1)  div { background: #c73b1b; }
+  .slide-up-boxes a:nth-child(2)  div { background: #367db2; }
+  .slide-up-boxes a:nth-child(3)  div { background: #FF9933; }
+  .slide-up-boxes a:nth-child(4)  div { background: #00CC66; }
+  .slide-up-boxes a:nth-child(5)  div { background: #0066CC; }
+  .slide-up-boxes a:nth-child(6)  div { background: #8F00D6; }
+  .slide-up-boxes a:nth-child(7)  div { background: #990033; }
+  .slide-up-boxes a:nth-child(8)  div { background: #990080; }
+  .slide-up-boxes a:nth-child(9)  div { background: #006699; }
+  .slide-up-boxes a:nth-child(10) div { background: #FF3366; }
+}

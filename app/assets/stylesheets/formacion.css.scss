@@ -1,0 +1,26 @@
+.formacion{  
+  padding: 10px 50px;
+  
+  span{
+    font-size: large;
+    color: #A8382D;
+    font-style: italic;
+    font-weight: bold;
+  }
+
+  .form-content{
+    margin-top: 2px;
+    margin-bottom: 20px;
+    margin-left: 50px;
+    @include border-radius(15px);
+    padding: 20px;
+    border: 2px solid #A8382D;
+    background-color: rgba(6, 26, 88, 0.2);
+
+    dl>dt{
+      color: #713731;
+      font-weight: bold;
+      margin-top: 8px;
+    }
+  }
+}

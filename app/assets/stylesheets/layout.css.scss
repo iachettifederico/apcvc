@@ -1,0 +1,213 @@
+$placeholdeer-color: #221DA5;
+
+body#application_body{
+  @include background(image-url("fondover.jpg") );
+
+  #content{
+    margin: 55px auto 15px auto;
+    overflow: auto;
+    width:  80%;
+    background-color: rgba(255, 255, 255, 0.45);
+    @include border-radius( 10px );
+    padding: 15px;
+    float:none;
+
+    h1, h2, h3, h4, h5, h6{
+      color:  #D55A12;
+      @include text-shadow(#000000 1px 1px 0px);
+      text-align: center;
+      margin: 5px auto 30px auto;
+    }
+
+    li{
+      list-style-type: none;
+      &:before {
+        content: "\2714 "; 
+        color: green;
+      }
+    }
+  }
+
+  #header{
+    width:  80%;
+    height: 110px;
+    margin: 0px auto;
+    padding: 1px;
+
+    img{
+      height: 100px;
+      vertical-align: middle;
+    }
+    
+    #gente{
+      position: fixed;
+      top: 0px;
+      width: 50%;
+      height: auto;
+      right: 15px;
+      vertical-align: middle;
+      z-index: -1;
+    }
+  }
+  
+  #footer{
+    font-family: Times New Roman;
+    font-style: italic;
+    font-size: large;
+    width:  80%;
+    height: 10%;
+    margin: 0px auto;
+    background-color: rgba(255, 255, 255, 0.45);
+    @include border-radius( 5px );
+    padding: 5px;
+    text-align: center;
+    .facebook{
+      width: 100px;
+      height: auto;
+    }
+  }
+  
+  #tierra{
+    position: fixed;
+    width: 100%;
+    bottom: 0px;
+    left: 0px;
+    z-index: -1;
+  }
+  
+  .news{
+    margin: 5px;
+  }
+  
+  .news_item{
+    margin: auto 50px;
+
+    .news_item_body{
+      padding: 10px 50px;
+      color: #753814;
+    }
+  }
+
+  .event_date{
+    text-align: right;
+    color: #A8382D;
+    font-weight: bold;
+    font-size: large;
+    @include text-shadow(#ffffff 1px 1px 0px);
+  }
+
+  .event{
+    margin: 10px 50px;
+
+    .event_image{
+      @include border-radius(5px);
+      display: block;
+      height: auto;
+      width: 600px;
+      margin: 5px auto;
+      border: 2px solid black;
+    }
+    
+  }
+
+  #content-table{
+    width: 100%;
+    td{
+      width: 50%;
+      vertical-align: top;
+      padding: 10px;
+      &:first-child{
+        border-right: 2px solid #E4E4E4;
+      }
+    }
+  }
+  
+  .aniversary{
+    position: relative;
+    top: 0px;
+  }
+  
+  #img25{
+    margin: 5px auto;
+    width: 100%;
+    height: auto;
+  }
+
+  #comision{
+    width: 60%;
+    margin: auto;
+
+    dt{
+      color: #753814;
+      font-size: large;
+      font-style: italic;
+      margin-top: 8px;
+    }
+    
+    dd{
+      color: #294659;
+      font-size: larger;
+      font-weight: bold;
+      margin-bottom: 8px;
+      padding-left: 15px;
+      &:hover{
+        color: #213847;
+        padding-left: 25px;
+      }
+    }
+  }
+
+  #about{
+    font-size: larger;
+
+    p{
+      &:hover{
+        font-style: italic;
+      }
+    }
+
+    p.odd{
+      padding: 8px 180px 8px 80px;
+      text-align: left;
+      color: #453452;
+    }
+
+    p.even{
+      padding: 8px 80px 8px 180px;
+      text-align: right;
+      color: #C62F29;
+    }
+  }
+
+  #jornada-contenido{
+    
+    padding: 15px 130px;
+    #costs-table{
+      width:90%;
+      margin:auto;
+      border: 3px solid #EA9B88;
+      @include border-radius(15px);
+
+      th{
+        background-color: #974835;
+      }    
+
+      tr{
+      }
+
+      tr:nth-child(even) {
+        background-color: #CA897A;
+      }
+
+      tr:nth-child(odd) {
+        background-color: #DCBDB6;
+      }
+
+      td{
+        max-width: 400px;
+        vertical-align: middle;
+        padding: 10px;
+      }
+    }
+  }
+}

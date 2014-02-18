@@ -1,0 +1,23 @@
+.tramas-article{
+  margin: 25px 50px;
+  @include border-radius(15px);
+  padding: 20px;
+  border: 2px solid #A8382D;
+  background-color: rgba(6, 26, 88, 0.2);
+
+  p.center{
+    padding: 8px 80px 8px 180px;
+    text-align: center;
+    color: #26474E;
+  }
+
+  .video{
+    border: 2px solid #A8382D;
+    background-color: #9A9870;
+    width: 420;
+    margin: 10px auto;
+    padding: 7px;
+    @include border-radius(5px);
+  }
+
+}

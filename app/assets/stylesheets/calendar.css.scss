@@ -1,0 +1,150 @@
+.calendar_selector{
+  margin: 10px auto;
+  text-align: center;
+
+  span{
+    width: 400px;
+    padding: 2px 20px;
+    color:  #D55A12;
+    @include text-shadow(#000000 1px 1px 0px);
+    text-align: center;
+    margin: 5px auto 30px auto;
+  }
+  
+  .link{
+    border: 1px solid #aaaaaa;
+    padding: 2px 20px;
+    @include background-image(linear-gradient(darken(#A2C9D6, 10%), lighten(#3E5E68, 5%), darken(#55818F, 10%)));
+    @include border-radius(2px);
+    font-size: large;
+    text-decoration: none;
+    color: white;
+    font-weight:bold;
+
+    &:hover{
+      @include background-image(linear-gradient(darken(#A2C9D6, 20%), lighten(#3E5E68, 0%), darken(#55818F, 20%)));
+    }
+  }
+
+  .title{
+    font-size: x-large;
+  }
+}
+
+.calendar{
+  border-collapse: collapse;
+  width: 100%;
+
+  td, th {
+    font-family: "Lucida Grande", arial, helvetica, sans-serif;
+    font-size: 10px;
+    padding: 6px;
+    border: 1px solid #999;
+  }
+
+  th {
+    background: #DDD;
+    color: #666;
+    text-align: center;
+    width: 14.2857142857143%;
+  }
+
+  td {
+    background: #FFF;
+    color: #777;
+    height: 80px;
+    vertical-align: top;
+    font-size: 16px;
+    &:hover{
+      @include background(image-url("nistri.png"));
+    }
+  }
+
+  .notmonth {
+    color: #A9A9A9;
+    background-color: #DEDEDE;
+    &:hover{
+      @include background(image-url("nistri.png"));
+      background-color: #A9A9A9;
+    }
+  }
+  .today {
+    background-color: #D7F2FF;
+    &:hover{
+      @include background(image-url("nistri.png"));
+      background-color: #D7F2FF;
+    }
+  }
+
+  .calendar_event{
+    background-color: #3D4785;
+    border: 2px solid #2F3660;
+    color: white;
+    font-size: 13px;
+    margin: 2px;
+    text-align: center;
+
+    a:link    { color: white; text-decoration: none; }
+    a:visited { color: white; text-decoration: none; }
+    a:hover   { color: white; text-decoration: none; }
+    a:active  { color: white; text-decoration: none; }
+
+    @include border-radius(2px);
+
+    &:hover{
+      font-weight: bold;
+      // @include background( linear-gradient(top,  #555555, #6D7EE1 ));
+    }
+  }
+}
+
+.event-show{
+  margin: 5px auto;
+  width:  90%;
+  max-width:  800px;
+  height: auto;
+
+  .event_title{
+    float: left;
+    font-size: large;
+    color: #A8382D;
+  }
+
+  .event_time{
+    font-size: large;
+    float: right;
+    color: #A8382D;
+  }
+  
+  .poster{
+    width: 100%;
+    height: auto;
+    border: 2px solid #858585;
+    @include border-radius(5px);
+  }
+  .poster[title]:hover:after {
+    content: attr(title);
+    padding: 4px 8px;
+    color: #333;
+  }
+
+  .event_content{
+    margin-left: 50px;
+    @include border-radius(15px);
+    padding: 20px;
+    border: 2px solid #A8382D;
+    background-color: rgba(6, 26, 88, 0.2);
+  }
+}
+
+  #calendar_message{
+    float: right;
+    display: inline-block;
+    text-align: right;
+    text-decoration: italic;
+    font-weight: bold;
+    color: #000000;
+    @include border-radius(5px);
+    padding:  2px;
+//    @include text-shadow(#000000 1px 1px 3px);
+  }
