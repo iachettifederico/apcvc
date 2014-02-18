@@ -10,6 +10,8 @@ Apcvc::Application.routes.draw do
     get :tramas
   end
 
+  resources :messages, only: [:new, :create]
+
   # get "/jornada25" => "pages#jornada25"
   # namespace(:admin){ resources :books }
   #
@@ -28,6 +30,5 @@ Apcvc::Application.routes.draw do
   # resources :news_items
   # resources :events
   # resources :books
-  # resources :messages
   #
 end

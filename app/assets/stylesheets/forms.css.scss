@@ -1,0 +1,17 @@
+form{
+  width: 50%;
+  margin: 0px auto;
+  .field {
+    padding: 10px;
+    input, label, textarea {
+      display: block;
+    }
+  }
+}
+
+form.new_message{
+  textarea {
+    height: 250px;
+    width: 450px;
+  }
+}
