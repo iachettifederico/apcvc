@@ -5,7 +5,6 @@ class ContactMailer < ActionMailer::Base
     apcvc_mail = "info@apcvc.com.ar"
 
     mail(to: apcvc_mail,
-         from: apcvc_mail,
          reply_to: message.email,
          subject: "[APCVC WEB] #{message.subject}")
   end
