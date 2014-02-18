@@ -195,7 +195,7 @@ DEPENDENCIES
   pg (~> 0.17.1)
   picasawebalbums (~> 1.4.5)!
   rails (~> 4.0.2)
-  rails_12factor
+  rails_12factor (~> 0.0.2)
   rmagick (~> 2.13.2)
   rspec-rails (~> 2.14.1)
   sass-rails (~> 4.0.1)
