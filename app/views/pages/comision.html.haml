@@ -1,0 +1,5 @@
+%h1 Comisión Directiva
+%dl#comision
+  - partners.each do |partner|
+    %dt= "#{partner.position}:"
+    %dd= "#{partner.title.capitalize}. #{partner.name}"

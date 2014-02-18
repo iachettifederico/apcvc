@@ -1,4 +1,11 @@
 GIT
+  remote: git://github.com/dfmonaco/rails_presenter.git
+  revision: 43159592a86e12a99da2682a77b7341fe5e04eb0
+  specs:
+    rails_presenter (0.0.3)
+      rails (> 3.2.0)
+
+GIT
   remote: git://github.com/iachettifederico/PicasaWebAlbums.git
   revision: cc2be18109f98e901ba40fecf3da8d2a2dc372b2
   specs:
@@ -196,6 +203,7 @@ DEPENDENCIES
   picasawebalbums (~> 1.4.5)!
   rails (~> 4.0.2)
   rails_12factor (~> 0.0.2)
+  rails_presenter (~> 0.0.3)!
   rmagick (~> 2.13.2)
   rspec-rails (~> 2.14.1)
   sass-rails (~> 4.0.1)

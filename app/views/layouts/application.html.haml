@@ -1,0 +1,30 @@
+!!!
+%html
+  %head
+    %title Apcvc
+    = stylesheet_link_tag    "application", media: "all"
+    /[if IE]
+      <haml_loud> stylesheet_link_tag  "ie_fixes", media: "all" </haml_loud>
+    = javascript_include_tag "application"
+    = csrf_meta_tags
+  %body#application_body
+    #header
+      = link_to(image_tag("Logo APCVCtrasparente.png", id: "logo_img"), root_url)
+      = image_tag "25anivgente.png", id: "gente"
+      = image_tag "tierra.png", id: "tierra"
+    = render partial: "layouts/menu"
+    #content
+      = yield
+    #footer
+      %b Sede APCVC
+      %br/
+      Dirección:
+      \#{link_to "9 de Julio 508 2° piso. Córdoba", "http://goo.gl/maps/6tU4C", target: "#"}
+      %br/
+      Teléfono: (0351) 424-7805
+      %br/
+      mail: #{mail_to "info@apcvc.org"}
+      %br/
+      Secretaría APCVC
+      %br/
+      Visitanos en #{link_to(image_tag("facebook.png", class: "facebook"), "http://www.facebook.com/secretaria.apcvc", target: "_blank")}
