@@ -10,6 +10,10 @@ Apcvc::Application.routes.draw do
     get :tramas
   end
 
+  match "/404", to: "errors#404", via: 'get'
+  match "/422", to: "errors#404", via: 'get'
+  match "/500", to: "errors#500", via: 'get'
+
   # get "/jornada25" => "pages#jornada25"
   # namespace(:admin){ resources :books }
   #
