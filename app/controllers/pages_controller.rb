@@ -39,4 +39,19 @@ class PagesController < ApplicationController
   def formacion
   end
 
+  def institutional_life
+    repo = PicasaWebAlbums.get_repository("infoapcvc@gmail.com", "123!!!9dejulio")
+    locals = {}
+
+    locals[:albums] = repo.get_all_albums.select { |album|
+      album.title != "Profile Photos" &&
+      album.title != "Eventos" &&
+      album.title != "Auto Backup"
+    }.map do |album|
+      photos = repo.get_photos_by_album_id(album.id)
+      new_album = Album.new(album.id, album.title, photos)
+    end
+
+    render "institutional_life", locals: locals
+  end
 end

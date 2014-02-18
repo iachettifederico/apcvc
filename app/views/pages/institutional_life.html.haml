@@ -1,0 +1,9 @@
+- albums.each do |album|
+  .album
+    %h3= album.title
+    - album.photos.each do |photo|
+      = link_to(image_tag(photo.url, class: "photo"), photo.url, class: "gallery#{album.id}", title: photo.caption)
+      :javascript
+        $(document).ready(function(){
+          $('.gallery#{album.id}').colorbox( { rel: 'gallery#{album.id}' } );
+        });
