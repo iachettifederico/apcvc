@@ -1,5 +1,6 @@
 Apcvc::Application.routes.draw do
   devise_for :admins
+  resources :events
 
   root to: 'home#index'
 
@@ -34,7 +35,6 @@ Apcvc::Application.routes.draw do
   # end
   #
   # resources :news_items
-  # resources :events
   # resources :books
   #
 end
