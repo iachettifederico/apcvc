@@ -30,3 +30,4 @@ gem "jquery-ui-rails", "~> 4.1.1"
 gem "ckeditor_rails", "~> 4.3.1"
 gem "simple_form", "~> 3.0.1"
 gem "rails_presenter", "~> 0.0.3", {:github=>"dfmonaco/rails_presenter"}
+gem "dotenv-rails", "~> 0.9.0", {:groups=>[:development, :test]}
