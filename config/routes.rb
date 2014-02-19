@@ -1,4 +1,6 @@
 Apcvc::Application.routes.draw do
+  resources :announcements
+
   devise_for :admins
   resources :events
 
