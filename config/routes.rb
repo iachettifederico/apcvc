@@ -15,7 +15,9 @@ Apcvc::Application.routes.draw do
 
   resources :messages, only: [:new, :create]
 
-  resources :events
+  resources :events do
+    get :poster
+  end
 
   get "admin" => "admin#index"
 

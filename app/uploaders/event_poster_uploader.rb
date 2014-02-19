@@ -1,18 +1,27 @@
 class EventPosterUploader < CarrierWave::Uploader::Base
   include CarrierWave::RMagick
 
-  storage :file
+  storage :dropbox
 
   # storage :dropbox
   # storage Rails.env == "production" ? :fog : :file
 
-  #include CarrierWave::MimeTypes
-  #process :set_content_type
-
   process resize_to_limit: [600, nil]
 
   def store_dir
-    "uploads/#{model.class.to_s.underscore}/#{mounted_as}/#{model.id}"
+    "/Public/#{model.class.to_s.underscore}/#{mounted_as}"
+  end
+
+  def filename
+    "#{model.id}.#{file.extension}"
+  end
+
+  def extension_white_list
+    %w(png jpg)
+  end
+
+  def url
+    "https://www.dropbox.com/s/8wt1yziemyum2pr/13.jpg"
   end
 
   # Provide a default URL as a default if there hasn't been a file uploaded:

@@ -8,7 +8,7 @@ group :production do
   gem "rails_12factor", "~> 0.0.2"
 end
 
-gem "rails", "~> 4.0.2"
+gem "rails", "~> 4.0.3"
 gem "sass-rails", "~> 4.0.1"
 gem "uglifier", "~> 2.4.0"
 gem "coffee-rails", "~> 4.0.1"
@@ -26,7 +26,7 @@ gem "htmlentities", "~> 4.3.1"
 gem "pg", "~> 0.17.1"
 gem "haml-rails", "~> 0.5.3"
 gem "colorbox-rails", "~> 0.1.0"
-gem "jquery-ui-rails", "~> 4.1.1"
+gem "jquery-ui-rails", "~> 4.1.2"
 gem "ckeditor_rails", "~> 4.3.1"
 gem "simple_form", "~> 3.0.1"
 gem "rails_presenter", "~> 0.0.3", {:github=>"dfmonaco/rails_presenter"}
@@ -35,3 +35,4 @@ gem "rails-i18n", "~> 4.0.1"
 gem "devise", "~> 3.2.2"
 gem "carrierwave", "~> 0.9.0"
 gem "carrierwave-dropbox", "~> 1.2.0"
+gem "dropbox-api", "~> 0.4.2"

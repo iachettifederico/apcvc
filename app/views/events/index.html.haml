@@ -1,5 +1,8 @@
 #calendar_message
   Para más información, haga click sobre algún evento
+- if current_admin
+  = actions do
+    = link_to "Nuevo Evento", new_event_path
 - present(calendar) do |calendar|
   .calendar_selector.rev
     = link_to "<", events_path(date: date.beginning_of_month.prev_month), class: :link
