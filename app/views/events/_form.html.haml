@@ -16,8 +16,9 @@
     = f.text_field :date, class: :datepicker
   .field
     = f.input :content,   label: "Contenido", as: :ckeditor
-  .field
-    = f.input :poster,    label: "Poster", as: :file
+  - if !@event.persisted? || @event.poster.present?
+    .field
+      = f.input :poster,    label: "Poster", as: :file
 
   .actions
     = f.submit 'Save'

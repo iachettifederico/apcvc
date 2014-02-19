@@ -63,10 +63,12 @@ class EventsController < ApplicationController
     event = Event.find(params[:event_id])
     respond_to do |format|
       format.jpg do
-        jpg = event.poster_file
-        send_data( jpg,
-                   filename: "#{event.id}.jpg",
-                   type:     "image/jpg")
+        if event.poster_file
+          jpg = event.poster_file
+          send_data( jpg,
+                     filename: "#{event.id}.jpg",
+                     type:     "image/jpg")
+        end
       end
     end
   end

@@ -2,7 +2,7 @@
   = link_to 'Editar evento', edit_event_path(@event)
 
 .event-show
-  - if event.poster
+  - if event.poster.present?
     .event_title= event.title
     .event_time= event.date.strftime("%d/%m/%Y")
     %div
