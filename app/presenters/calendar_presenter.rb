@@ -1,5 +1,9 @@
 # -*- coding: utf-8 -*-
 class CalendarPresenter < RailsPresenter::Base
+  def month
+    date.strftime("%B %Y")
+  end
+
   def weekdays
     %W[Lunes Martes Miércoles Jueves Viernes Sábado Domingo]
   end

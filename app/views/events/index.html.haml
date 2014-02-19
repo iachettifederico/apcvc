@@ -7,7 +7,7 @@
   .calendar_selector.rev
     = link_to "<", events_path(date: date.beginning_of_month.prev_month), class: :link
     %span.title
-      = date
+      = calendar.month
     = link_to ">", events_path(date: date.beginning_of_month.next_month), class: :link
   %table.calendar
     %thead
