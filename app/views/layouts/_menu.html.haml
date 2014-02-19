@@ -1,6 +1,6 @@
-#menu
-  %section.slide-up-boxes
-    - present(MenuPresenter::Menu.new) do |menu|
+- present(MenuPresenter::Menu.new) do |menu|
+  #menu
+    %section.slide-up-boxes
       = menu.item_link("Inicio", root_path)
       = menu.item_link("Novedades", "news_items")
       = menu.item_link("¿Quienes somos", pages_about_path)
@@ -8,7 +8,7 @@
       = menu.item_link("Secretarías", pages_secretaries_path)
       = menu.item_link("Formación", pages_formacion_path)
       = menu.item_link("Vida Institucional", pages_institutional_life_path)
-      = menu.item_link("Agenda", "events_path")
+      = menu.item_link("Agenda", events_path)
       = menu.item_link("Tramas Digital", pages_tramas_path)
       = menu.item_link("Biblioteca", "books_path")
       = menu.item_link("Contacto", new_message_path)

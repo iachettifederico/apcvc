@@ -5,6 +5,7 @@ form{
     padding: 10px;
     input, label, textarea {
       display: block;
+      max-width: 100%;
     }
   }
 }

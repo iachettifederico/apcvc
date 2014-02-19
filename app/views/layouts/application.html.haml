@@ -9,6 +9,10 @@
     = csrf_meta_tags
   %body#application_body
     #header
+      - if current_admin
+        .login-info
+          %ul
+            %li= link_to "Salir", destroy_admin_session_path, method: :delete
       = link_to(image_tag("Logo APCVCtrasparente.png", id: "logo_img"), root_url)
       = image_tag "25anivgente.png", id: "gente"
       = image_tag "tierra.png", id: "tierra"

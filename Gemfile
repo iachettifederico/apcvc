@@ -31,3 +31,5 @@ gem "ckeditor_rails", "~> 4.3.1"
 gem "simple_form", "~> 3.0.1"
 gem "rails_presenter", "~> 0.0.3", {:github=>"dfmonaco/rails_presenter"}
 gem "dotenv-rails", "~> 0.9.0", {:groups=>[:development, :test]}
+gem "rails-i18n", "~> 4.0.1"
+gem "devise", "~> 3.2.2"

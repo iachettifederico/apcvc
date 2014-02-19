@@ -1,4 +1,6 @@
 Apcvc::Application.routes.draw do
+  devise_for :admins
+
   root to: 'home#index'
 
   namespace :pages do
@@ -11,6 +13,10 @@ Apcvc::Application.routes.draw do
   end
 
   resources :messages, only: [:new, :create]
+
+  resources :events
+
+  get "admin" => "admin#index"
 
   # get "/jornada25" => "pages#jornada25"
   # namespace(:admin){ resources :books }
