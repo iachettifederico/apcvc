@@ -1,0 +1,23 @@
+#calendar_message
+  Para más información, haga click sobre algún evento
+- present(calendar) do |calendar|
+  .calendar_selector.rev
+    = link_to "<", events_path(date: date.beginning_of_month.prev_month), class: :link
+    %span.title
+      = date
+    = link_to ">", events_path(date: date.beginning_of_month.next_month), class: :link
+  %table.calendar
+    %thead
+      - calendar.weekdays.each do |day|
+        %th
+          = day
+    %tbody
+      - calendar.weeks.each do |week|
+        %tr.week
+          - week.each do |d|
+            %td{class: calendar.day_classes(d, date)}
+              .cal-date
+                = d.day
+              - calendar.events_for(d).each do |event|
+                .calendar_event
+                  = link_to event.title, event_path(event)

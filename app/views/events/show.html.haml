@@ -1,0 +1,18 @@
+%p#notice= notice
+
+%p
+  %b Title:
+  = @event.title
+%p
+  %b Date:
+  = @event.date
+%p
+  %b Content:
+  = @event.content
+%p
+  %b Poster:
+  = @event.poster
+
+= link_to 'Edit', edit_event_path(@event)
+\|
+= link_to 'Back', events_path
