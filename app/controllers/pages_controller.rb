@@ -40,7 +40,7 @@ class PagesController < ApplicationController
   end
 
   def institutional_life
-    repo = PicasaWebAlbums.get_repository("infoapcvc@gmail.com", "123!!!9dejulio")
+    repo = PicasaWebAlbums.get_repository(ENV["GOOGLE_USER"], ENV["GOOGLE_PASS"])
     locals = {}
 
     locals[:albums] = repo.get_all_albums.select { |album|
