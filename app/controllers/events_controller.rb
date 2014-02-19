@@ -43,6 +43,7 @@ class EventsController < ApplicationController
   # PATCH/PUT /events/1
   def update
     respond_to do |format|
+      @event.destroy_poster_file if @event.poster_file
       if @event.update(event_params)
         format.html { redirect_to @event, notice: 'El evento fue actualizado.' }
       else

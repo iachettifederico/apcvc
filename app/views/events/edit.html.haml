@@ -1,7 +1,13 @@
 %h1 Editing event
 
+.form-actions
+  = actions do
+    = link_to 'Ver', @event
+    = link_to 'Atrás', events_path
+
 = render 'form'
 
-= link_to 'Show', @event
-\|
-= link_to 'Back', events_path
+.form-actions
+  = actions do
+    = link_to 'Ver', @event
+    = link_to 'Atrás', events_path
