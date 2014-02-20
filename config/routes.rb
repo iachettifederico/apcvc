@@ -20,7 +20,7 @@ Apcvc::Application.routes.draw do
     get :secretaries
     get :formacion
     get :institutional_life
-    #get :tramas
+    get :tramas
   end
 
   namespace :load do

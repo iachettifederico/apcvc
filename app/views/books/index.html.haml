@@ -2,11 +2,6 @@
   = link_to "Agregar libro", new_book_path
 
 %h1 Libros disponibles en biblioteca
-= actions do
-  = form_tag load_books_path, multipart: true do
-    = label :csv, "Archivo CSV"
-    = file_field_tag :csv, accept: "text/csv"
-    %p= submit_tag "Importar"
 
 %table#library-table.list
   %thead
@@ -35,3 +30,8 @@
 %br
 = actions do
   = link_to "Agregar libro", new_book_path
+= actions do
+  = form_tag load_books_path, multipart: true do
+    = label :csv, "Archivo CSV"
+    = file_field_tag :csv, accept: "text/csv"
+    %p= submit_tag "Importar"

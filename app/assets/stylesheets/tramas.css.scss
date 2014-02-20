@@ -19,5 +19,19 @@
     padding: 7px;
     @include border-radius(5px);
   }
+}
 
+.about-tramas {
+  cursor:pointer;
+
+  h2 {
+    display: inline;
+    text-align: center;
+  }
+
+  p.info {
+    display: inline;
+    font-size: small;
+    color: #707070;
+  }
 }

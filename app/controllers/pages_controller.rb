@@ -54,4 +54,8 @@ class PagesController < ApplicationController
 
     render "institutional_life", locals: locals
   end
+
+  def tramas
+    @feed = Feed.new
+  end
 end

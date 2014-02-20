@@ -17,4 +17,5 @@
 //= require dataTables/jquery.dataTables
 //= require ckeditor-jquery
 //= require colorbox-rails
+//= require tramas
 //= require_tree .
