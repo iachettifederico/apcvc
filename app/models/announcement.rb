@@ -16,6 +16,6 @@ class Announcement < ActiveRecord::Base
   end
 
   def self.published
-    where("from_date >= ? AND (to_date IS NULL OR to_date <= ?)", DateTime.now.beginning_of_day, DateTime.now.end_of_day)
+    where("from_date >= ? AND (to_date IS NULL OR to_date <= ?)", Date.today, Date.tomorrow)
   end
 end
