@@ -4,3 +4,13 @@
   border: 1px solid #313131;
   @include border-radius(5px);
 }
+
+.ui-datepicker-today {
+  background-color: #e5e5e5;
+}
+
+.ui-datepicker-calendar {
+  td:hover {
+    background-color: #5E63E2;
+  }
+}

@@ -1,0 +1,22 @@
+= simple_form_for @video do |f|
+  - if @video.errors.any?
+    #error_explanation
+      %h2= "#{pluralize(@video.errors.count, "error")} prohibited this writer_application from being saved:"
+      %ul
+        - @video.errors.full_messages.each do |msg|
+          %li= msg
+
+  .actions
+    = f.submit "Guardar"
+
+  .field
+    = f.input :title
+  .field
+    = f.input :url, as: :url
+  .field
+    = f.label :pubdate, label: "Fecha de publicación"
+    = f.text_field :pubdate, class: :datepicker
+
+
+  .actions
+    = f.submit 'Guardar'

@@ -56,6 +56,6 @@ class PagesController < ApplicationController
   end
 
   def tramas
-    @feed = Feed.new
+    @feed = Feed.new(Video.all)
   end
 end

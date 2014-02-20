@@ -13,18 +13,10 @@
     %p.center Hoy la informática es parte de la subjetividad de la época  y hay que hacerle lugar.
     %p.center Es nuestra intención  acercar nuevas producciones y diferentes miradas , a estos novedosos y cambiantes medios.
     %p.center Los convocamos a escribir.
-%h2 Entrevista a Sara Moscona en APCVC a cargo de Córdoba Psi
-.tramas-article
-  %center
-    %iframe.video{allowfullscreen: "", frameborder: "0", height: "315", src: "http://www.youtube.com/embed/zgCD29wuTH4", width: "420"}
-%h2 Entrevista a Silvia Gomel en APCVC a cargo de Córdoba Psi
-.tramas-article
-  %center
-    %iframe.video{allowfullscreen: "", frameborder: "0", height: "315", src: "http://www.youtube.com/embed/hxp_-9k-CQA", width: "420"}
-%h2 Entrevista a Daniel Waisbrot en APCVC a cargo de Córdoba Psi
-.tramas-article
-  %center
-    %iframe.video{allowfullscreen: "", frameborder: "0", height: "315", src: "http://www.youtube.com/embed/tBXH7jKSbR4", width: "420"}
+
+- @feed.each do |entry|
+  = render entry
+
 %h2 Acta Jornada 25 Aniversario
 -# .tramas-article
 -#   %p.center Para ver el trabajo, haga click sobre el título

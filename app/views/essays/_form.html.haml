@@ -1,0 +1,22 @@
+= form_for @essay do |f|
+  - if @essay.errors.any?
+    #error_explanation
+      %h2= "#{pluralize(@essay.errors.count, "error")} prohibited this essay from being saved:"
+      %ul
+        - @essay.errors.full_messages.each do |msg|
+          %li= msg
+
+  .field
+    = f.label :title
+    = f.text_field :title
+  .field
+    = f.label :file
+    = f.text_field :file
+  .field
+    = f.label :authors
+    = f.text_field :authors
+  .field
+    = f.label :abstract
+    = f.text_area :abstract
+  .actions
+    = f.submit 'Save'

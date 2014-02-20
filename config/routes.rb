@@ -1,4 +1,8 @@
 Apcvc::Application.routes.draw do
+  resources :essays
+
+  resources :videos
+
   get "admin" => "admin#index"
   get "*some_page/admin" => "admin#index"
 

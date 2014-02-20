@@ -1,0 +1,18 @@
+%p#notice= notice
+
+%p
+  %b Title:
+  = @essay.title
+%p
+  %b File:
+  = @essay.file
+%p
+  %b Authors:
+  = @essay.authors
+%p
+  %b Abstract:
+  = @essay.abstract
+
+= link_to 'Edit', edit_essay_path(@essay)
+\|
+= link_to 'Back', essays_path
