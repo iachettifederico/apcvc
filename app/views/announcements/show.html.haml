@@ -1,21 +1,8 @@
-%p#notice= notice
+= actions do
+  = link_to 'Edit', edit_announcement_path(@announcement)
 
-%p
-  %b Title:
-  = @announcement.title
-%p
-  %b Content:
-  = @announcement.content
-%p
-  %b From:
-  = @announcement.from
-%p
-  %b To:
-  = @announcement.to
-%p
-  %b Front page:
-  = @announcement.front_page
+= render @announcement
 
-= link_to 'Edit', edit_announcement_path(@announcement)
-\|
-= link_to 'Back', announcements_path
+
+= actions do
+  = link_to 'Edit', edit_announcement_path(@announcement)

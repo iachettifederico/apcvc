@@ -4,7 +4,7 @@ class AnnouncementsController < ApplicationController
   # GET /announcements
   # GET /announcements.json
   def index
-    feed = Feed.new(Announcement.all, Event.all).to_a
+    feed = Feed.new(Announcement.published, Event.published.announcements).to_a
     @announcements = feed
   end
 
@@ -15,7 +15,7 @@ class AnnouncementsController < ApplicationController
 
   # GET /announcements/new
   def new
-    @announcement = Announcement.new
+    @announcement = Announcement.new(front_page: params[:front_page].present?)
   end
 
   # GET /announcements/1/edit
@@ -70,6 +70,6 @@ class AnnouncementsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def announcement_params
-      params.require(:announcement).permit(:title, :content, :from, :to, :front_page)
+      params.require(:announcement).permit(:title, :content, :from_date, :to_date, :front_page)
     end
 end

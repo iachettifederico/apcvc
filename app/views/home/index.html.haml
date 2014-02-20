@@ -1,1 +1,9 @@
-%h1 HOME
+= actions do
+  = link_to "Nueva noticia", new_announcement_path(front_page: true)
+  = link_to "Nuevo evento", new_event_path(front_page: true)
+
+= render @announcements
+
+= actions do
+  = link_to "Nueva noticia", new_announcement_path(front_page: true)
+  = link_to "Nuevo evento", new_event_path(front_page: true)

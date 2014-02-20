@@ -20,7 +20,8 @@ class EventsController < ApplicationController
 
   # GET /events/new
   def new
-    @event = Event.new(announcement: params[:announcement].present?)
+    @event = Event.new(announcement: params[:announcement].present?,
+                       front_page: params[:front_page].present?)
   end
 
   # GET /events/1/edit
@@ -82,6 +83,6 @@ class EventsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def event_params
-      params.require(:event).permit(:title, :date, :content, :poster)
+      params.require(:event).permit(:title, :date, :content, :poster, :announcement, :front_page)
     end
 end

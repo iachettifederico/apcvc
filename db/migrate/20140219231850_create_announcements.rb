@@ -3,8 +3,8 @@ class CreateAnnouncements < ActiveRecord::Migration
     create_table :announcements do |t|
       t.string :title
       t.text :content
-      t.datetime :from
-      t.datetime :to
+      t.datetime :from_date
+      t.datetime :to_date
       t.boolean :front_page
 
       t.timestamps

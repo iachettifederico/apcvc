@@ -37,8 +37,8 @@ ActiveRecord::Schema.define(version: 20140220004449) do
   create_table "announcements", force: true do |t|
     t.string   "title"
     t.text     "content"
-    t.datetime "from"
-    t.datetime "to"
+    t.datetime "from_date"
+    t.datetime "to_date"
     t.boolean  "front_page"
     t.datetime "created_at"
     t.datetime "updated_at"

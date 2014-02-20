@@ -1,7 +1,9 @@
 %hr/
+= actions do
+  = link_to "Editar", edit_announcement_path(announcement)
 .announcement
   %h2= announcement.title
   .event_date
-    Publicado: #{announcement.from.strftime("%d/%m/%Y")}
+    Publicado: #{announcement.from_date.strftime("%d/%m/%Y")}
   .announcement_body
     = announcement.content.html_safe

@@ -3,7 +3,7 @@ class Feed
   include Enumerable
 
   def initialize(*collections)
-    @collections = collections.flatten
+    @collections = collections.flatten.sort
   end
 
   def each
