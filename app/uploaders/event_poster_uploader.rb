@@ -13,7 +13,7 @@ class EventPosterUploader < CarrierWave::Uploader::Base
   end
 
   def filename
-    "#{model.id}.jpg"
+    "#{model.id}.jpg" if file
   end
 
   def extension_white_list

@@ -19,6 +19,10 @@
   - if !@event.persisted? || @event.poster.present?
     .field
       = f.input :poster,    label: "Poster", as: :file
+  .field
+    = f.input :front_page, label: "Publicar en la portada"
+  .field
+    = f.input :announcement,   label: "Publicar en novedades"
 
   .actions
     = f.submit 'Save'
