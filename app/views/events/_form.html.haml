@@ -18,7 +18,8 @@
     = f.input :content,   label: "Contenido", as: :ckeditor
   - if !@event.persisted? || @event.poster.present?
     .field
-      = f.input :poster,    label: "Poster", as: :file
+      = f.label :poster, label: "Poster"
+      = f.file_field :poster, accept: 'image/jpeg'
   .field
     = f.input :front_page, label: "Publicar en la portada"
   .field

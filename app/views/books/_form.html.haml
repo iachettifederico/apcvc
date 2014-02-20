@@ -1,0 +1,25 @@
+= simple_form_for @book do |f|
+  - if @book.errors.any?
+    #error_explanation
+      %h2= "#{pluralize(@book.errors.count, "error")} prohibited this writer_application from being saved:"
+      %ul
+        - @book.errors.full_messages.each do |msg|
+          %li= msg
+
+  .actions
+    = f.submit "Guardar"
+
+  .field
+    = f.input :title
+  .field
+    = f.input :author
+  .field
+    = f.input :code
+  .field
+    = f.input :edition
+  .field
+    = f.input :year
+
+
+  .actions
+    = f.submit 'Guardar'

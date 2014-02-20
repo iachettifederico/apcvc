@@ -24,3 +24,8 @@
               - calendar.events_for(d).each do |event|
                 .calendar_event
                   = link_to event.title, event_path(event)
+= actions do
+  = form_tag load_events_path, multipart: true do
+    = label :csv, "Archivo CSV"
+    = file_field_tag :csv, accept: "text/csv"
+    %p= submit_tag "Importar"
