@@ -11,7 +11,7 @@ class Event < ActiveRecord::Base
   end
 
   def destroy_poster_file
-    dropbox_client.find("/Public/event/poster/#{id}.jpg").destroy
+    dropbox_client.find("#{dropbox_dir}/#{id}.jpg").destroy
   end
 
   def <=>(other)
@@ -39,8 +39,12 @@ class Event < ActiveRecord::Base
     @dropbox_client ||= Dropbox::API::Client.new(token: ENV["DROPBOX_ACCESS_TOKEN"], secret: ENV["DROPBOX_ACCESS_TOKEN_SECRET"])
   end
 
+  def dropbox_dir
+    "event/poster"
+  end
+
   def get_poster_file
-    dropbox_file = dropbox_client.download("Public/event/poster/#{id}.jpg")
+    dropbox_file = dropbox_client.download("#{dropbox_dir}/#{id}.jpg")
   end
 
   # @client.search("#{id}.jpg").select do |file|
