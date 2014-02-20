@@ -2,7 +2,8 @@
   = link_to "Nueva noticia", new_announcement_path
   = link_to "Nuevo evento", new_event_path(announcement: true)
 
-= render @announcements
+- @announcements.each do |entry|
+  = render entry
 
 = actions do
   = link_to "Nueva noticia", new_announcement_path
