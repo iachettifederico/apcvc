@@ -1,22 +1,4 @@
 = actions do
   = link_to 'Editar evento', edit_event_path(@event)
 
-.event-show
-  - if event.poster.present?
-    .event_title= event.title
-    .event_time= event.date.strftime("%d/%m/%Y")
-    %div
-      = image_tag event_poster_path(event, format: :jpg), class: "poster", title: HTMLEntities.new.decode(strip_tags(event.content))
-  - elsif event.content.present?
-    .event_title= event.title
-    .event_time= event.date.strftime("%d/%m/%Y")
-    %br/
-    %br/
-    .event_content
-      = event.content.html_safe
-  - else
-    %br/
-    %br/
-    .event_content
-      %h2= event.title
-      %h3= event.date.strftime("%d/%m/%Y")
+= render @event

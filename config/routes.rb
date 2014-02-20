@@ -38,7 +38,6 @@ Apcvc::Application.routes.draw do
   #
   # end
   #
-  # resources :news_items
   # resources :books
   #
 end

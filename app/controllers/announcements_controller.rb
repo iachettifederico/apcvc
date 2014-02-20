@@ -4,7 +4,8 @@ class AnnouncementsController < ApplicationController
   # GET /announcements
   # GET /announcements.json
   def index
-    @announcements = Announcement.all
+    feed = Feed.new(Announcement.all, Event.all).to_a
+    @announcements = feed
   end
 
   # GET /announcements/1

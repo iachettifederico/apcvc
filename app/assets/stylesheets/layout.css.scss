@@ -22,7 +22,7 @@ body#application_body{
     li{
       list-style-type: none;
       &:before {
-        content: "\2714 "; 
+        content: "\2714 ";
         color: green;
       }
     }
@@ -38,7 +38,7 @@ body#application_body{
       height: 100px;
       vertical-align: middle;
     }
-    
+
     #gente{
       position: fixed;
       top: 0px;
@@ -49,7 +49,7 @@ body#application_body{
       z-index: -1;
     }
   }
-  
+
   #footer{
     font-family: Times New Roman;
     font-style: italic;
@@ -66,7 +66,7 @@ body#application_body{
       height: auto;
     }
   }
-  
+
   #tierra{
     position: fixed;
     width: 100%;
@@ -74,15 +74,15 @@ body#application_body{
     left: 0px;
     z-index: -1;
   }
-  
+
   .news{
     margin: 5px;
   }
-  
-  .news_item{
+
+  .announcement{
     margin: auto 50px;
 
-    .news_item_body{
+    .announcement_body{
       padding: 10px 50px;
       color: #753814;
     }
@@ -107,7 +107,7 @@ body#application_body{
       margin: 5px auto;
       border: 2px solid black;
     }
-    
+
   }
 
   #content-table{
@@ -121,12 +121,12 @@ body#application_body{
       }
     }
   }
-  
+
   .aniversary{
     position: relative;
     top: 0px;
   }
-  
+
   #img25{
     margin: 5px auto;
     width: 100%;
@@ -143,7 +143,7 @@ body#application_body{
       font-style: italic;
       margin-top: 8px;
     }
-    
+
     dd{
       color: #294659;
       font-size: larger;
@@ -180,7 +180,7 @@ body#application_body{
   }
 
   #jornada-contenido{
-    
+
     padding: 15px 130px;
     #costs-table{
       width:90%;
@@ -190,7 +190,7 @@ body#application_body{
 
       th{
         background-color: #974835;
-      }    
+      }
 
       tr{
       }

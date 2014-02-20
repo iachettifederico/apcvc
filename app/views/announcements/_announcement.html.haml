@@ -1,0 +1,7 @@
+%hr/
+.announcement
+  %h2= announcement.title
+  .event_date
+    Publicado: #{announcement.from.strftime("%d/%m/%Y")}
+  .announcement_body
+    = announcement.content.html_safe
