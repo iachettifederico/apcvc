@@ -1,4 +1,6 @@
 Apcvc::Application.routes.draw do
+  get "admin" => "admin#index"
+  get "*some_page/admin" => "admin#index"
   resources :announcements
 
   devise_for :admins
@@ -20,8 +22,6 @@ Apcvc::Application.routes.draw do
   resources :events do
     get :poster
   end
-
-  get "admin" => "admin#index"
 
   # get "/jornada25" => "pages#jornada25"
   # namespace(:admin){ resources :books }

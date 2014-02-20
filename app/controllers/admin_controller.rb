@@ -2,6 +2,10 @@ class AdminController < ApplicationController
   before_filter :authenticate_admin!
 
   def index
-    redirect_to root_path
+    if params["some_page"]
+      redirect_to "/" + params["some_page"]
+    else
+      redirect_to root_path
+    end
   end
 end
