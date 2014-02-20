@@ -9,7 +9,7 @@ class EventPosterUploader < CarrierWave::Uploader::Base
   process resize_to_limit: [600, nil]
 
   def store_dir
-    "/Public/#{model.class.to_s.underscore}/#{mounted_as}"
+    "#{model.class.to_s.underscore}/#{mounted_as}"
   end
 
   def filename
