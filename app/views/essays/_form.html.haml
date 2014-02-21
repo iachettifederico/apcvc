@@ -1,22 +1,26 @@
-= form_for @essay do |f|
+= simple_form_for @essay do |f|
   - if @essay.errors.any?
     #error_explanation
-      %h2= "#{pluralize(@essay.errors.count, "error")} prohibited this essay from being saved:"
+      %h2= "#{pluralize(@essay.errors.count, "error")} prohibited this writer_application from being saved:"
       %ul
         - @essay.errors.full_messages.each do |msg|
           %li= msg
 
-  .field
-    = f.label :title
-    = f.text_field :title
-  .field
-    = f.label :file
-    = f.text_field :file
-  .field
-    = f.label :authors
-    = f.text_field :authors
-  .field
-    = f.label :abstract
-    = f.text_area :abstract
   .actions
-    = f.submit 'Save'
+    = f.submit "Guardar"
+
+  .field
+    = f.input :title
+  .field
+    = f.input :abstract, as: :ckeditor
+    Autores:
+    - @essay.authors.each_with_index do |author, i|
+      = render "author_fields", title: author.title, name: author.name
+    - 5.times do
+      = render "author_fields"
+  .field
+    = f.label :document, label: "Archivo"
+    = f.file_field :document, accept: 'application/pdf'
+
+  .actions
+    = f.submit 'Guardar'

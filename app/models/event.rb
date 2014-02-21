@@ -36,7 +36,9 @@ class Event < ActiveRecord::Base
 
   private
   def dropbox_client
-    @dropbox_client ||= Dropbox::API::Client.new(token: ENV["DROPBOX_ACCESS_TOKEN"], secret: ENV["DROPBOX_ACCESS_TOKEN_SECRET"])
+    @dropbox_client ||= Dropbox::API::Client
+      .new(token: ENV["DROPBOX_ACCESS_TOKEN"],
+           secret: ENV["DROPBOX_ACCESS_TOKEN_SECRET"])
   end
 
   def dropbox_dir
@@ -47,7 +49,4 @@ class Event < ActiveRecord::Base
     dropbox_file = dropbox_client.download("#{dropbox_dir}/#{id}.jpg")
   end
 
-  # @client.search("#{id}.jpg").select do |file|
-  #   File.dirname(file.path) == "Public/event/poster"
-  # end.first
 end

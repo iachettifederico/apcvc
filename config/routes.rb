@@ -1,8 +1,4 @@
 Apcvc::Application.routes.draw do
-  resources :essays
-
-  resources :videos
-
   get "admin" => "admin#index"
   get "*some_page/admin" => "admin#index"
 
@@ -14,8 +10,12 @@ Apcvc::Application.routes.draw do
   resources :books
   resources :events
   resources :messages, only: [:new, :create]
+  resources :videos
   resources :events do
     get :poster
+  end
+  resources :essays do
+    get :document
   end
 
   namespace :pages do

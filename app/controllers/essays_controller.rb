@@ -1,5 +1,6 @@
 class EssaysController < ApplicationController
   before_action :set_essay, only: [:show, :edit, :update, :destroy]
+  before_action :authenticate_admin!
 
   # GET /essays
   # GET /essays.json
@@ -25,28 +26,24 @@ class EssaysController < ApplicationController
   # POST /essays.json
   def create
     @essay = Essay.new(essay_params)
+    @essay.authors = params["authors"].map { |attrs| Author.new(attrs) }
 
     respond_to do |format|
       if @essay.save
         format.html { redirect_to @essay, notice: 'Essay was successfully created.' }
-        format.json { render action: 'show', status: :created, location: @essay }
       else
         format.html { render action: 'new' }
-        format.json { render json: @essay.errors, status: :unprocessable_entity }
       end
     end
   end
 
-  # PATCH/PUT /essays/1
-  # PATCH/PUT /essays/1.json
   def update
+    @essay.authors = params["authors"].map { |attrs| Author.new(attrs) }
     respond_to do |format|
       if @essay.update(essay_params)
         format.html { redirect_to @essay, notice: 'Essay was successfully updated.' }
-        format.json { head :no_content }
       else
         format.html { render action: 'edit' }
-        format.json { render json: @essay.errors, status: :unprocessable_entity }
       end
     end
   end
@@ -61,14 +58,29 @@ class EssaysController < ApplicationController
     end
   end
 
-  private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_essay
-      @essay = Essay.find(params[:id])
+  def document
+    essay = Essay.find(params[:essay_id])
+    respond_to do |format|
+      format.jpg do
+        if essay.document_file
+          pdf = essay.document_file
+          send_data( pdf,
+                     filename: "#{essay.id}.pdf",
+                     type:     "application/pdf")
+        end
+      end
     end
+  end
 
-    # Never trust parameters from the scary internet, only allow the white list through.
-    def essay_params
-      params.require(:essay).permit(:title, :file, :authors, :abstract)
-    end
+  private
+  # Use callbacks to share common setup or constraints between actions.
+  def set_essay
+    @essay = Essay.find(params[:id])
+  end
+
+  # Never trust parameters from the scary internet, only allow the white list through.
+  def essay_params
+    params.require(:essay).permit(:title, :document, :authors, :abstract)
+  end
+
 end

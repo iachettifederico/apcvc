@@ -1,0 +1,6 @@
+- title = nil unless defined? title
+- name = nil unless defined? name
+.field-inline
+  = label_tag "Autor: "
+  = text_field_tag "authors[][title]", title, placeholder: "Título (Lic)"
+  = text_field_tag "authors[][name]", name, placeholder: "Apellido y Nombre"

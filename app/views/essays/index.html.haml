@@ -3,7 +3,7 @@
 %table
   %tr
     %th Title
-    %th File
+    %th Document
     %th Authors
     %th Abstract
     %th
@@ -13,7 +13,7 @@
   - @essays.each do |essay|
     %tr
       %td= essay.title
-      %td= essay.file
+      %td= essay.document
       %td= essay.authors
       %td= essay.abstract
       %td= link_to 'Show', essay

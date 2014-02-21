@@ -3,9 +3,6 @@ class EventPosterUploader < CarrierWave::Uploader::Base
 
   storage :dropbox
 
-  # storage :dropbox
-  # storage Rails.env == "production" ? :fog : :file
-
   process resize_to_limit: [600, nil]
 
   def store_dir

@@ -8,6 +8,14 @@ form, .form-actions {
       max-width: 100%;
     }
   }
+
+  .field-inline {
+    padding: 10px;
+    input, label, textarea {
+      display: inline;
+      max-width: 100%;
+    }
+  }
 }
 
 form.new_message{

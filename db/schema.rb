@@ -56,7 +56,7 @@ ActiveRecord::Schema.define(version: 20140220203742) do
 
   create_table "essays", force: true do |t|
     t.string   "title"
-    t.string   "file"
+    t.string   "document"
     t.string   "authors"
     t.text     "abstract"
     t.datetime "created_at"
