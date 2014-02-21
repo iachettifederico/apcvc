@@ -30,6 +30,15 @@ class Essay < ActiveRecord::Base
     write_attribute(:authors, authors.join("|"))
   end
 
+  def <=>(other)
+    if other.is_a? Video
+      self.created_at <=> other.created_at
+    else
+      super
+    end
+  end
+
+
   private
   def dropbox_client
     @dropbox_client ||= Dropbox::API::Client

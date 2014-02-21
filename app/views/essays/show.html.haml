@@ -1,18 +1,11 @@
+= actions do
+  = link_to 'Editar', edit_essay_path(@essay)
+  = link_to 'Volver a Tramas', pages_tramas_path
+
 %p#notice= notice
 
-%p
-  %b Title:
-  = @essay.title
-%p
-  %b Document:
-  = @essay.document
-%p
-  %b Authors:
-  = @essay.authors
-%p
-  %b Abstract:
-  = @essay.abstract
+= render @essay
 
-= link_to 'Edit', edit_essay_path(@essay)
-\|
-= link_to 'Back', essays_path
+= actions do
+  = link_to 'Editar', edit_essay_path(@essay)
+  = link_to 'Volver a Tramas', pages_tramas_path

@@ -41,6 +41,7 @@ class Author
 
   def format(name, title)
     return "" unless name.present?
-    "#{title}. #{name}"
+    dot = title.present? ? ". " : ""
+    "#{title}#{dot}#{name}"
   end
 end

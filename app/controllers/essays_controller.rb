@@ -30,7 +30,7 @@ class EssaysController < ApplicationController
 
     respond_to do |format|
       if @essay.save
-        format.html { redirect_to @essay, notice: 'Essay was successfully created.' }
+        format.html { redirect_to pages_tramas_path, notice: 'Essay was successfully created.' }
       else
         format.html { render action: 'new' }
       end
@@ -41,7 +41,7 @@ class EssaysController < ApplicationController
     @essay.authors = params["authors"].map { |attrs| Author.new(attrs) }
     respond_to do |format|
       if @essay.update(essay_params)
-        format.html { redirect_to @essay, notice: 'Essay was successfully updated.' }
+        format.html { redirect_to pages_tramas_path, notice: 'Essay was successfully updated.' }
       else
         format.html { render action: 'edit' }
       end
@@ -61,7 +61,7 @@ class EssaysController < ApplicationController
   def document
     essay = Essay.find(params[:essay_id])
     respond_to do |format|
-      format.jpg do
+      format.pdf do
         if essay.document_file
           pdf = essay.document_file
           send_data( pdf,

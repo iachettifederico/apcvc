@@ -19,6 +19,14 @@
     padding: 7px;
     @include border-radius(5px);
   }
+
+  .essay-authors{
+    color: #A8382D;
+    @include text-shadow(#ffffff 1px 1px 0px);
+    li{
+      font-weight: bold;
+    }
+  }
 }
 
 .about-tramas {

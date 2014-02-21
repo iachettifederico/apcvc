@@ -1,7 +1,11 @@
+= actions do
+  = link_to 'Volver a Tramas', pages_tramas_path
+  = link_to 'Mostrar', @essay
+
 %h1 Editing essay
 
 = render 'form'
 
-= link_to 'Show', @essay
-\|
-= link_to 'Back', essays_path
+= actions do
+  = link_to 'Volver a Tramas', pages_tramas_path
+  = link_to 'Mostrar', @essay
