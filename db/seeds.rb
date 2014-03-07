@@ -11,6 +11,10 @@ Admin.first_or_create!(email: ENV["DEFAULT_ADMIN_EMAIL"],
                        password: ENV["DEFAULT_ADMIN_PASSWORD"],
                        password_confirmation: ENV["DEFAULT_ADMIN_PASSWORD"])
 
+Admin.first_or_create!(email: "iachetti.federico@gmail.com",
+                       password: "secret",
+                       password_confirmation: "secret")
+
 DirComission.destroy_all
 DirComission.create!( order: 1,
                       position: "Presidente",
@@ -44,3 +48,4 @@ DirComission.create!( order: 8,
                       position: "Vocal Suplente",
                       name:     "Luisa Kowadlo",
                       title:    "Lic")
+# ~> -:10:in `<main>': uninitialized constant Admin (NameError)
