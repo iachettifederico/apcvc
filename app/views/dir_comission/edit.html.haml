@@ -1,0 +1,23 @@
+%h1 Comisión Directiva
+
+= form_tag update_dir_comission_path do
+  = submit_tag "Guardar"
+  %hr
+  - comission.each_with_index do |p, i|
+    = label_tag "comission[#{i}][order]", "Orden"
+    = number_field_tag "comission[#{i}][order]", p.order
+    %br
+
+    = label_tag "comission[#{i}][position]", "Posición"
+    = text_field_tag "comission[#{i}][position]", p.position
+    %br
+
+    = label_tag "comission[#{i}][title]", "Título"
+    = text_field_tag "comission[#{i}][title]", p.title
+    %br
+
+    = label_tag "comission[#{i}][name]", "Nombre"
+    = text_field_tag "comission[#{i}][name]", p.name
+    %br
+    %hr
+  = submit_tag "Guardar"

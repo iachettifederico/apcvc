@@ -1,5 +1,8 @@
+= actions do
+  = link_to "Editar", edit_dir_comission_path
+
 %h1 Comisión Directiva
 %dl#comision
-  - partners.each do |partner|
+  - comission.each do |partner|
     %dt= "#{partner.position}:"
     %dd= "#{partner.title.capitalize}. #{partner.name}"
