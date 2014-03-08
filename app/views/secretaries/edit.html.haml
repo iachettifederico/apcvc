@@ -1,0 +1,19 @@
+%h1 Secretarías
+
+= form_tag update_secretaries_path do
+  = submit_tag "Guardar"
+  %hr
+  - secretaries.each_with_index do |p, i|
+    = label_tag "secretaries[#{i}][order]", "Orden"
+    = number_field_tag "secretaries[#{i}][order]", p.order
+    %br
+
+    = label_tag "secretaries[#{i}][name]", "Nombre"
+    = text_field_tag "secretaries[#{i}][name]", p.name
+    %br
+
+    = label_tag "secretaries[#{i}][content]", "Contenido"
+    = text_area_tag "secretaries[#{i}][content]", p.content, class: :ckeditor
+    %br
+    %hr
+  = submit_tag "Guardar"

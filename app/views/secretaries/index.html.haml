@@ -1,0 +1,9 @@
+= actions do
+  = link_to "Editar", edit_secretaries_path
+
+%h1 Secretarías
+#seclist
+  - secretaries.each do |secretarie|
+    %span= secretarie.name
+    .sec-content
+      = secretarie.content.html_safe

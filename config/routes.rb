@@ -18,13 +18,6 @@ Apcvc::Application.routes.draw do
     get :document
   end
 
-  namespace :pages do
-    get :about
-    get :secretaries
-    get :institutional_life
-    get :tramas
-  end
-
   get "/dir_comission"         => "dir_comission#index"
   get "/edit_dir_comission"    => "dir_comission#edit"
   post "/update_dir_comission" => "dir_comission#update"
@@ -32,6 +25,17 @@ Apcvc::Application.routes.draw do
   get "/training"         => "training#index"
   get "/edit_training"    => "training#edit"
   post "/update_training" => "training#update"
+
+  get "/secretaries"         => "secretaries#index"
+  get "/edit_secretaries"    => "secretaries#edit"
+  post "/update_secretaries" => "secretaries#update"
+
+  namespace :pages do
+    get :about
+    get :institutional_life
+    get :tramas
+  end
+
 
   namespace :load do
     post :books
