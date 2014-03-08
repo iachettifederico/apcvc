@@ -23,11 +23,11 @@
       %b Sede APCVC
       %br/
       Dirección:
-      \#{link_to "9 de Julio 508 2° piso. Córdoba", "http://goo.gl/maps/6tU4C", target: "#"}
+      \#{link_to Settings[:address], Settings[:address_map], target: "#"}
       %br/
-      Teléfono: (0351) 424-7805
+      Teléfono: #{Settings[:tel]}
       %br/
-      mail: #{mail_to "info.apcvc@gmail.com"}
+      mail: #{mail_to Settings[:email]}
       %br/
       Secretaría APCVC
       %br/

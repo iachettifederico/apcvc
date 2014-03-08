@@ -1,10 +1,19 @@
-%h1 Administrar sitio
+.settings
+  %h1 Administrar sitio
 
-%table.table
-  %tbody
-    - settings.each_with_index do |setting, index|
-      = simple_form_for(setting) do |f|
-        %tr
-          %th= setting.description || setting.key
-          %td= f.input :value, label: false, as: setting.field_type
-          %td= f.submit "Save"
+  - settings.each do |setting|
+    = simple_form_for(setting) do |f|
+      .form
+        %dl
+          %dt= setting.description || setting.key
+          %dd
+            = f.input :value, label: false, as: setting.field_type
+            = actions do
+              = link_to "Guardar", "#", id: "submit_#{setting.id}"
+              :javascript
+                $(document).ready(function(){
+                  $("#submit_#{setting.id}").click(function(event){
+                    $("#edit_settings_#{setting.id}").submit();
+                    event.preventDefault();
+                  });
+                });

@@ -283,22 +283,43 @@ Settings.destroy_all
    key: :email,
    value: "info.apcvc@gmail.com",
    field_type: :email,
-   description: nil
+   description: "e-mail"
  },
  {
    order: 1,
+   key: :address,
+   value: "9 de Julio 508 2° piso. Córdoba",
+   field_type: :string,
+   description: "Dirección"
+ },
+ {
+   order: 2,
+   key: :address_map,
+   value: "http://goo.gl/maps/6tU4C",
+   field_type: :url,
+   description: "Link al mapa (Google Maps)"
+ },
+ {
+   order: 3,
+   key: :tel,
+   value: "(0351) 424-7805",
+   field_type: :string,
+   description: "Teléfono"
+ },
+ {
+   order: 10,
    key: :about,
    value: [
-    "<p>",
-    "  Somos una institución formadora con una larga trayectoria en el campo del pensamiento psicoanalítico vincular.",
-    "</p>",
-    "<p>",
-    "  Conformamos la misma, profesionales de diferentes disciplinas interesados en las dinámicas vinculares, avocados a la docencia, investigación, asistencia y apertura a la comunidad.",
-    "</p>",
-    "<p>",
-    "  La perspectiva del psicoanálisis vincular aporta herramientas que permiten el abordaje de la complejidad de las demandas actuales.",
-    "</p>",
-   ].join,
+           "<p>",
+           "  Somos una institución formadora con una larga trayectoria en el campo del pensamiento psicoanalítico vincular.",
+           "</p>",
+           "<p>",
+           "  Conformamos la misma, profesionales de diferentes disciplinas interesados en las dinámicas vinculares, avocados a la docencia, investigación, asistencia y apertura a la comunidad.",
+           "</p>",
+           "<p>",
+           "  La perspectiva del psicoanálisis vincular aporta herramientas que permiten el abordaje de la complejidad de las demandas actuales.",
+           "</p>",
+          ].join,
    field_type: :ckeditor,
    description: "¿Quiénes somos?"
  },
