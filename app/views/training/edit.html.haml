@@ -1,0 +1,19 @@
+%h1 Formación
+
+= form_tag update_training_path do
+  = submit_tag "Guardar"
+  %hr
+  - training.each_with_index do |p, i|
+    = label_tag "training[#{i}][order]", "Orden"
+    = number_field_tag "training[#{i}][order]", p.order
+    %br
+
+    = label_tag "training[#{i}][title]", "Título"
+    = text_field_tag "training[#{i}][title]", p.title
+    %br
+
+    = label_tag "training[#{i}][content]", "Contenido"
+    = text_area_tag "training[#{i}][content]", p.content, class: :ckeditor
+    %br
+    %hr
+  = submit_tag "Guardar"

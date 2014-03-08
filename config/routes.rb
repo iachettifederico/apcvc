@@ -21,14 +21,17 @@ Apcvc::Application.routes.draw do
   namespace :pages do
     get :about
     get :secretaries
-    get :formacion
     get :institutional_life
     get :tramas
   end
 
-  get "/dir_comission" => "dir_comission#index"
-  get "/edit_dir_comission" => "dir_comission#edit"
+  get "/dir_comission"         => "dir_comission#index"
+  get "/edit_dir_comission"    => "dir_comission#edit"
   post "/update_dir_comission" => "dir_comission#update"
+
+  get "/training"         => "training#index"
+  get "/edit_training"    => "training#edit"
+  post "/update_training" => "training#update"
 
   namespace :load do
     post :books

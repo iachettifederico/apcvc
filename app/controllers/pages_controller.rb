@@ -6,9 +6,6 @@ class PagesController < ApplicationController
   def secretaries
   end
 
-  def formacion
-  end
-
   def institutional_life
     repo = PicasaWebAlbums.get_repository(ENV["GOOGLE_USER"], ENV["GOOGLE_PASS"])
     locals = {}

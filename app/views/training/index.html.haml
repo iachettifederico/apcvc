@@ -1,0 +1,11 @@
+= actions do
+  = link_to "Editar", edit_training_path
+
+.formacion
+  %h3 CURSOS DE FORMACIÓN EN PSICOANÁLISIS DE LAS CONFIGURACIONES VINCULARES:
+  %h3 PAREJA, FAMILIA, GRUPO E INSTITUCIONES
+
+  - training.each do |t|
+    %span= t.title
+    .form-content
+      = t.content.html_safe
