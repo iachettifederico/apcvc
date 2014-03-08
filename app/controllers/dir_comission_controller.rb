@@ -1,5 +1,7 @@
 # -*- coding: utf-8 -*-
 class DirComissionController < ApplicationController
+  before_filter :authenticate_admin!, only: [:edit, :update]
+
   def index
     comission = DirComission.order(:order)
     render "index", locals: { comission: comission}

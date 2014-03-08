@@ -1,11 +1,14 @@
 Apcvc::Application.routes.draw do
   get "admin" => "admin#index"
+  get "admin/settings" => "admin#settings", as: :admin_settings
+  #get "admin/update_settings" => "admin#update", as: :update_settings
   get "*some_page/admin" => "admin#index"
 
   root to: 'home#index'
 
   devise_for :admins
 
+  resources :settings
   resources :announcements
   resources :books
   resources :events
@@ -35,7 +38,6 @@ Apcvc::Application.routes.draw do
     get :institutional_life
     get :tramas
   end
-
 
   namespace :load do
     post :books

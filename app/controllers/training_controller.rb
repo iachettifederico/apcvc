@@ -1,5 +1,7 @@
 # -*- coding: utf-8 -*-
 class TrainingController < ApplicationController
+  before_filter :authenticate_admin!, only: [:edit, :update]
+
   def index
     training = Training.order(:order)
     render "index", locals: { training: training}

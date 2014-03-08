@@ -1,0 +1,10 @@
+%h1 Administrar sitio
+
+%table.table
+  %tbody
+    - settings.each_with_index do |setting, index|
+      = simple_form_for(setting) do |f|
+        %tr
+          %th= setting.description || setting.key
+          %td= f.input :value, label: false, as: setting.field_type
+          %td= f.submit "Save"

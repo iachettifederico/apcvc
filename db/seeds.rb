@@ -275,3 +275,33 @@ Secretarie.create!( order: 4,
                               "<p> El objetivo de esta secretaría es dar a conocer las actividades de formación, científicas de APCVC, a los asociados, profesionales psi, y a instituciones colegas. Con la apoyatura de cartelería, correos electrónicos, redes sociales, se da difusión de jornadas anuales, ciclos debates, encuentros científicos y  a las actividades de formación en nuestra  y en otras provincias. Se confecciona además una agenda con eventos o acontecimientos sociales. \"Colgando\" estos carteles y conectándonos a través de las redes, llegamos con eficacia y rapidez a un mayor número de personas. </p>",
                               "<p> Pero en esta época de globalización y tecnología no descartamos la transmisión boca a boca y la difusión que cada uno de nosotros hacemos  \"colgando\" carteles  en espacios reales y concretos, por los que transitamos cotidianamente. </p>",
                              ].join("\n"))
+
+Settings.destroy_all
+[
+ {
+   order: 0,
+   key: :email,
+   value: "info.apcvc@gmail.com",
+   field_type: :email,
+   description: nil
+ },
+ {
+   order: 1,
+   key: :about,
+   value: [
+    "<p>",
+    "  Somos una institución formadora con una larga trayectoria en el campo del pensamiento psicoanalítico vincular.",
+    "</p>",
+    "<p>",
+    "  Conformamos la misma, profesionales de diferentes disciplinas interesados en las dinámicas vinculares, avocados a la docencia, investigación, asistencia y apertura a la comunidad.",
+    "</p>",
+    "<p>",
+    "  La perspectiva del psicoanálisis vincular aporta herramientas que permiten el abordaje de la complejidad de las demandas actuales.",
+    "</p>",
+   ].join,
+   field_type: :ckeditor,
+   description: "¿Quiénes somos?"
+ },
+].each do |attrs|
+  Settings.create!(attrs)
+end

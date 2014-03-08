@@ -1,5 +1,7 @@
 # -*- coding: utf-8 -*-
 class SecretariesController < ApplicationController
+  before_filter :authenticate_admin!, only: [:edit, :update]
+
   def index
     secretaries = Secretarie.order(:order)
     render "index", locals: { secretaries: secretaries}

@@ -166,16 +166,22 @@ body#application_body{
       }
     }
 
-    p.odd{
-      padding: 8px 180px 8px 80px;
-      text-align: left;
-      color: #453452;
+    p{
+      &:nth-child(even){
+        //p.odd{
+        padding: 8px 180px 8px 80px;
+        text-align: left;
+        color: #453452;
+      }
     }
 
-    p.even{
-      padding: 8px 80px 8px 180px;
-      text-align: right;
-      color: #C62F29;
+    p{
+      &:nth-child(even){
+        //p.even{
+        padding: 8px 80px 8px 180px;
+        text-align: right;
+        color: #C62F29;
+      }
     }
   }
 

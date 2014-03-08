@@ -8,4 +8,10 @@ class AdminController < ApplicationController
       redirect_to root_path
     end
   end
+
+  def settings
+    settings = Settings.order(:order)
+
+    render "settings", locals: { settings: settings}
+  end
 end
