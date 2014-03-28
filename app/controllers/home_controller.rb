@@ -9,10 +9,10 @@ class HomeController < ApplicationController
 
   def get_poster
     repo  = PicasaWebAlbums.get_repository(ENV["GOOGLE_USER"], ENV["GOOGLE_PASS"])
-    album_id = repo.get_album_by_title("Portada").id
+    album_id = repo.get_album_by_title("Porttada").id
     photos = repo.get_photos_by_album_id(album_id)
     photos.sort_by(&:id).last.url
   rescue TypeError
-    "http://www.libreriapaidos.com/eventos/ImageFetch.ashx?Size=2&ImageID=5626"
+    "http://lh5.googleusercontent.com/-7UCU9MGy8wM/UYGV1_JWlxI/AAAAAAAAACA/6AcX20UG_58/w540-h538-no/Logo+APCVCtrasparente.png"
   end
 end
