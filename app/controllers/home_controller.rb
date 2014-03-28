@@ -9,7 +9,7 @@ class HomeController < ApplicationController
 
   def get_poster
     repo  = PicasaWebAlbums.get_repository(ENV["GOOGLE_USER"], ENV["GOOGLE_PASS"])
-    album_id = repo.get_album_by_title("Porttada").id
+    album_id = repo.get_album_by_title("Portada").id
     photos = repo.get_photos_by_album_id(album_id)
     photos.sort_by(&:id).last.url
   rescue TypeError
