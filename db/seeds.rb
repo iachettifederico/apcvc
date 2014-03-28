@@ -281,20 +281,23 @@ Settings.destroy_all
  {
    order: 0,
    key: :email,
+   title: "e-mail",
    value: "info.apcvc@gmail.com",
    field_type: :email,
-   description: "e-mail"
+   description: "Dirección de e-mail donde llegarán las consultas realizadas desde la página. También es la dirección que aparecerá en la pantalla \"Inicio\""
  },
  {
    order: 1,
    key: :address,
+   title: "Dirección",
    value: "9 de Julio 508 2° piso. Córdoba",
    field_type: :string,
-   description: "Dirección"
+   description: ""
  },
  {
    order: 2,
    key: :address_map,
+   title: "Link al mapa (Google Maps)",
    value: "http://goo.gl/maps/6tU4C",
    field_type: :url,
    description: "Link al mapa (Google Maps)"
@@ -302,13 +305,23 @@ Settings.destroy_all
  {
    order: 3,
    key: :tel,
+   title: "Teléfono",
    value: "(0351) 424-7805",
    field_type: :string,
    description: "Teléfono"
  },
  {
+   order: 4,
+   key: :facebook,
+   title: "Facebook",
+   value: "http://www.facebook.com/secretaria.apcvc",
+   field_type: :string,
+   description: nil
+ },
+ {
    order: 10,
    key: :about,
+   title: "¿Quiénes somos?",
    value: [
            "<p>",
            "  Somos una institución formadora con una larga trayectoria en el campo del pensamiento psicoanalítico vincular.",
@@ -322,6 +335,14 @@ Settings.destroy_all
           ].join,
    field_type: :ckeditor,
    description: "¿Quiénes somos?"
+ },
+ {
+   order: 11,
+   key: :front_page_poster,
+   title: "Poster en el inicio",
+   value: false,
+   field_type: :boolean,
+   description: "Mostrar un póster en la página de inicio en vez de novedades y eventos"
  },
 ].each do |attrs|
   Settings.create!(attrs)

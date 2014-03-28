@@ -5,9 +5,12 @@
     = simple_form_for(setting) do |f|
       .form
         %dl
-          %dt= setting.description || setting.key
+          %dt= setting.title || setting.key
           %dd
             = f.input :value, label: false, as: setting.field_type
+          - if setting.description.present?
+            = setting.description
+          %dd
             = actions do
               = link_to "Guardar", "#", id: "submit_#{setting.id}"
               :javascript

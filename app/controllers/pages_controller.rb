@@ -11,6 +11,7 @@ class PagesController < ApplicationController
     locals = {}
 
     locals[:albums] = repo.get_all_albums.select { |album|
+      album.title != "Portada" &&
       album.title != "Profile Photos" &&
       album.title != "Eventos" &&
       album.title != "Auto Backup"

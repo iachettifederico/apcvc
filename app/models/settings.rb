@@ -15,6 +15,23 @@ class Settings < ActiveRecord::Base
     end
   end
 
+  def value
+    if field_type == "boolean"
+      !!(read_attribute(:value) != "f")
+    else
+      read_attribute(:value)
+    end
+  end
+
+
+  def value=(v)
+    if field_type == "boolean"
+      v = v == "1"
+      write_attribute(:value, v)
+    else
+      write_attribute(:value, v)
+    end
+  end
   private
 
   def self.get_setting(key)
