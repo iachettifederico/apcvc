@@ -4,17 +4,20 @@ class TrainingController < ApplicationController
 
   def index
     training = Training.order(:order)
+
     render "index", locals: { training: training}
   end
 
   def edit
     training = Training.order(:order)
+    last_order = training.last.order
+    training << Training.new(order: last_order + 10)
 
     render "edit", locals: { training: training}
   end
 
   def update
-    new_training = params["training"].map { |i, h| h }
+    new_training = params["training"].map { |i, h| h if h["title"].present? }.compact
     Training.destroy_all
     Training.create(new_training)
 
