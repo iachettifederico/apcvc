@@ -3,7 +3,7 @@
   = link_to "Nuevo evento", new_event_path(front_page: true)
 
 - if Settings[:front_page_poster] || @announcements.empty?
-  %center= image_tag @poster
+  %center= image_tag @poster, style: "max-width: 90%; height: auto;"
 - else
   = render @announcements
 
