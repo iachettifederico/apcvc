@@ -14,5 +14,8 @@ class HomeController < ApplicationController
     photos.sort_by(&:id).last.url
   rescue TypeError
     "http://lh5.googleusercontent.com/-7UCU9MGy8wM/UYGV1_JWlxI/AAAAAAAAACA/6AcX20UG_58/w540-h538-no/Logo+APCVCtrasparente.png"
+  rescue ArgumentError
+    
+    "http://lh5.googleusercontent.com/-7UCU9MGy8wM/UYGV1_JWlxI/AAAAAAAAACA/6AcX20UG_58/w540-h538-no/Logo+APCVCtrasparente.png"
   end
 end
