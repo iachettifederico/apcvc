@@ -1,3 +1,4 @@
+ruby "2.2.0"
 source "https://rubygems.org"
 
 gem "jquery-datatables-rails", "~> 3.1.1", {:github=>"rweng/jquery-datatables-rails"}
