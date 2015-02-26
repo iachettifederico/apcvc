@@ -1,0 +1,1554 @@
+/* line 4, /home/fedex/code/apcvc/app/assets/stylesheets/menu.css.scss */
+#menu {
+  width: 1066px;
+  margin: 5px auto;
+  padding: 0;
+  font: 14px Georgia, serif;
+}
+/* line 5, /home/fedex/.rvm/gems/ruby-2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+#menu html, #menu body, #menu div, #menu span, #menu applet, #menu object, #menu iframe,
+#menu h1, #menu h2, #menu h3, #menu h4, #menu h5, #menu h6, #menu p, #menu blockquote, #menu pre,
+#menu a, #menu abbr, #menu acronym, #menu address, #menu big, #menu cite, #menu code,
+#menu del, #menu dfn, #menu em, #menu img, #menu ins, #menu kbd, #menu q, #menu s, #menu samp,
+#menu small, #menu strike, #menu strong, #menu sub, #menu sup, #menu tt, #menu var,
+#menu b, #menu u, #menu i, #menu center,
+#menu dl, #menu dt, #menu dd, #menu ol, #menu ul, #menu li,
+#menu fieldset, #menu form, #menu label, #menu legend,
+#menu table, #menu caption, #menu tbody, #menu tfoot, #menu thead, #menu tr, #menu th, #menu td,
+#menu article, #menu aside, #menu canvas, #menu details, #menu embed,
+#menu figure, #menu figcaption, #menu footer, #menu header, #menu hgroup,
+#menu menu, #menu nav, #menu output, #menu ruby, #menu section, #menu summary,
+#menu time, #menu mark, #menu audio, #menu video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+/* line 22, /home/fedex/.rvm/gems/ruby-2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+#menu html {
+  line-height: 1;
+}
+/* line 24, /home/fedex/.rvm/gems/ruby-2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+#menu ol, #menu ul {
+  list-style: none;
+}
+/* line 26, /home/fedex/.rvm/gems/ruby-2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+#menu table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* line 28, /home/fedex/.rvm/gems/ruby-2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+#menu caption, #menu th, #menu td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+/* line 30, /home/fedex/.rvm/gems/ruby-2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+#menu q, #menu blockquote {
+  quotes: none;
+}
+/* line 103, /home/fedex/.rvm/gems/ruby-2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+#menu q:before, #menu q:after, #menu blockquote:before, #menu blockquote:after {
+  content: "";
+  content: none;
+}
+/* line 32, /home/fedex/.rvm/gems/ruby-2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+#menu a img {
+  border: none;
+}
+/* line 116, /home/fedex/.rvm/gems/ruby-2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+#menu article, #menu aside, #menu details, #menu figcaption, #menu figure, #menu footer, #menu header, #menu hgroup, #menu main, #menu menu, #menu nav, #menu section, #menu summary {
+  display: block;
+}
+/* line 12, /home/fedex/code/apcvc/app/assets/stylesheets/menu.css.scss */
+#menu a {
+  text-decoration: none;
+}
+/* line 16, /home/fedex/code/apcvc/app/assets/stylesheets/menu.css.scss */
+#menu .slide-up-boxes a {
+  display: block;
+  float: left;
+  margin: 0 2px;
+  background: rgba(215, 215, 215, 0.5);
+  border: 1px solid #ccc;
+  height: 40px;
+  overflow: hidden;
+  width: 90px;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+}
+/* line 28, /home/fedex/code/apcvc/app/assets/stylesheets/menu.css.scss */
+#menu .slide-up-boxes span {
+  color: #333;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  height: 40px;
+  font: italic 15px/20px Georgia, Serif;
+  /* Vertically center text by making line height equal to height */
+  opacity: 1;
+  width: 90px;
+  -moz-transition: all, 0.15s, linear 1s;
+  -o-transition: all, 0.15s, linear 1s;
+  -webkit-transition: all, 0.15s, linear 1s;
+  transition: all 0.15s linear 1s;
+}
+/* line 40, /home/fedex/code/apcvc/app/assets/stylesheets/menu.css.scss */
+#menu .slide-up-boxes a:hover span {
+  margin-top: -40px;
+  -moz-transition: all, 0.15s, linear 1s;
+  -o-transition: all, 0.15s, linear 1s;
+  -webkit-transition: all, 0.15s, linear 1s;
+  transition: all 0.15s linear 1s;
+  opacity: 0;
+}
+/* line 46, /home/fedex/code/apcvc/app/assets/stylesheets/menu.css.scss */
+#menu .slide-up-boxes div {
+  position: relative;
+  color: white;
+  font: 14,5px Georgia, Serif;
+  height: 40px;
+  padding: 6px;
+  vertical-align: middle;
+  text-align: center;
+  opacity: 0;
+  -moz-transition: all, 0.15s, linear 1s;
+  -o-transition: all, 0.15s, linear 1s;
+  -webkit-transition: all, 0.15s, linear 1s;
+  transition: all 0.15s linear 1s;
+  -moz-transform: rotate(10deg);
+  -ms-transform: rotate(10deg);
+  -webkit-transform: rotate(10deg);
+  transform: rotate(10deg);
+}
+/* line 58, /home/fedex/code/apcvc/app/assets/stylesheets/menu.css.scss */
+#menu .slide-up-boxes a:hover div {
+  opacity: 1;
+  margin-top: -40px;
+  -moz-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+/* line 64, /home/fedex/code/apcvc/app/assets/stylesheets/menu.css.scss */
+#menu .slide-up-boxes a:nth-child(1) div {
+  background: #c73b1b;
+}
+/* line 65, /home/fedex/code/apcvc/app/assets/stylesheets/menu.css.scss */
+#menu .slide-up-boxes a:nth-child(2) div {
+  background: #367db2;
+}
+/* line 66, /home/fedex/code/apcvc/app/assets/stylesheets/menu.css.scss */
+#menu .slide-up-boxes a:nth-child(3) div {
+  background: #FF9933;
+}
+/* line 67, /home/fedex/code/apcvc/app/assets/stylesheets/menu.css.scss */
+#menu .slide-up-boxes a:nth-child(4) div {
+  background: #00CC66;
+}
+/* line 68, /home/fedex/code/apcvc/app/assets/stylesheets/menu.css.scss */
+#menu .slide-up-boxes a:nth-child(5) div {
+  background: #0066CC;
+}
+/* line 69, /home/fedex/code/apcvc/app/assets/stylesheets/menu.css.scss */
+#menu .slide-up-boxes a:nth-child(6) div {
+  background: #8F00D6;
+}
+/* line 70, /home/fedex/code/apcvc/app/assets/stylesheets/menu.css.scss */
+#menu .slide-up-boxes a:nth-child(7) div {
+  background: #990033;
+}
+/* line 71, /home/fedex/code/apcvc/app/assets/stylesheets/menu.css.scss */
+#menu .slide-up-boxes a:nth-child(8) div {
+  background: #990080;
+}
+/* line 72, /home/fedex/code/apcvc/app/assets/stylesheets/menu.css.scss */
+#menu .slide-up-boxes a:nth-child(9) div {
+  background: #006699;
+}
+/* line 73, /home/fedex/code/apcvc/app/assets/stylesheets/menu.css.scss */
+#menu .slide-up-boxes a:nth-child(10) div {
+  background: #FF3366;
+}
+
+/* line 3, /home/fedex/code/apcvc/app/assets/stylesheets/layout.css.scss */
+body#application_body {
+  background-image: url("fondover.jpg");
+}
+/* line 6, /home/fedex/code/apcvc/app/assets/stylesheets/layout.css.scss */
+body#application_body #content {
+  margin: 55px auto 15px auto;
+  overflow: auto;
+  width: 80%;
+  background-color: rgba(255, 255, 255, 0.45);
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  padding: 15px;
+  float: none;
+}
+/* line 15, /home/fedex/code/apcvc/app/assets/stylesheets/layout.css.scss */
+body#application_body #content h1, body#application_body #content h2, body#application_body #content h3, body#application_body #content h4, body#application_body #content h5, body#application_body #content h6 {
+  color: #D55A12;
+  text-shadow: #000000 1px 1px 0px;
+  text-align: center;
+  margin: 5px auto 30px auto;
+}
+/* line 22, /home/fedex/code/apcvc/app/assets/stylesheets/layout.css.scss */
+body#application_body #content li {
+  list-style-type: none;
+}
+/* line 24, /home/fedex/code/apcvc/app/assets/stylesheets/layout.css.scss */
+body#application_body #content li:before {
+  content: "\2714 ";
+  color: green;
+}
+/* line 31, /home/fedex/code/apcvc/app/assets/stylesheets/layout.css.scss */
+body#application_body #header {
+  width: 80%;
+  height: 110px;
+  margin: 0px auto;
+  padding: 1px;
+}
+/* line 37, /home/fedex/code/apcvc/app/assets/stylesheets/layout.css.scss */
+body#application_body #header img {
+  height: 100px;
+  vertical-align: middle;
+}
+/* line 42, /home/fedex/code/apcvc/app/assets/stylesheets/layout.css.scss */
+body#application_body #header #gente {
+  position: fixed;
+  top: 0px;
+  width: 50%;
+  height: auto;
+  right: 15px;
+  vertical-align: middle;
+  z-index: -1;
+}
+/* line 53, /home/fedex/code/apcvc/app/assets/stylesheets/layout.css.scss */
+body#application_body #footer {
+  font-family: Times New Roman;
+  font-style: italic;
+  font-size: large;
+  width: 80%;
+  height: 10%;
+  margin: 0px auto;
+  background-color: rgba(255, 255, 255, 0.45);
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  padding: 5px;
+  text-align: center;
+}
+/* line 64, /home/fedex/code/apcvc/app/assets/stylesheets/layout.css.scss */
+body#application_body #footer .facebook {
+  width: 100px;
+  height: auto;
+}
+/* line 70, /home/fedex/code/apcvc/app/assets/stylesheets/layout.css.scss */
+body#application_body #tierra {
+  position: fixed;
+  width: 100%;
+  bottom: 0px;
+  left: 0px;
+  z-index: -1;
+}
+/* line 78, /home/fedex/code/apcvc/app/assets/stylesheets/layout.css.scss */
+body#application_body .news {
+  margin: 5px;
+}
+/* line 82, /home/fedex/code/apcvc/app/assets/stylesheets/layout.css.scss */
+body#application_body .announcement {
+  margin: auto 50px;
+}
+/* line 85, /home/fedex/code/apcvc/app/assets/stylesheets/layout.css.scss */
+body#application_body .announcement .announcement_body {
+  padding: 10px 50px;
+  color: #753814;
+}
+/* line 91, /home/fedex/code/apcvc/app/assets/stylesheets/layout.css.scss */
+body#application_body .event_date {
+  text-align: right;
+  color: #A8382D;
+  font-weight: bold;
+  font-size: large;
+  text-shadow: #ffffff 1px 1px 0px;
+}
+/* line 99, /home/fedex/code/apcvc/app/assets/stylesheets/layout.css.scss */
+body#application_body .event {
+  margin: 10px 50px;
+}
+/* line 102, /home/fedex/code/apcvc/app/assets/stylesheets/layout.css.scss */
+body#application_body .event .event_image {
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  display: block;
+  height: auto;
+  width: 600px;
+  margin: 5px auto;
+  border: 2px solid black;
+}
+/* line 113, /home/fedex/code/apcvc/app/assets/stylesheets/layout.css.scss */
+body#application_body #content-table {
+  width: 100%;
+}
+/* line 115, /home/fedex/code/apcvc/app/assets/stylesheets/layout.css.scss */
+body#application_body #content-table td {
+  width: 50%;
+  vertical-align: top;
+  padding: 10px;
+}
+/* line 119, /home/fedex/code/apcvc/app/assets/stylesheets/layout.css.scss */
+body#application_body #content-table td:first-child {
+  border-right: 2px solid #E4E4E4;
+}
+/* line 125, /home/fedex/code/apcvc/app/assets/stylesheets/layout.css.scss */
+body#application_body .aniversary {
+  position: relative;
+  top: 0px;
+}
+/* line 130, /home/fedex/code/apcvc/app/assets/stylesheets/layout.css.scss */
+body#application_body #img25 {
+  margin: 5px auto;
+  width: 100%;
+  height: auto;
+}
+/* line 136, /home/fedex/code/apcvc/app/assets/stylesheets/layout.css.scss */
+body#application_body #comision {
+  width: 60%;
+  margin: auto;
+}
+/* line 140, /home/fedex/code/apcvc/app/assets/stylesheets/layout.css.scss */
+body#application_body #comision dt {
+  color: #753814;
+  font-size: large;
+  font-style: italic;
+  margin-top: 8px;
+}
+/* line 147, /home/fedex/code/apcvc/app/assets/stylesheets/layout.css.scss */
+body#application_body #comision dd {
+  color: #294659;
+  font-size: larger;
+  font-weight: bold;
+  margin-bottom: 8px;
+  padding-left: 15px;
+}
+/* line 153, /home/fedex/code/apcvc/app/assets/stylesheets/layout.css.scss */
+body#application_body #comision dd:hover {
+  color: #213847;
+  padding-left: 25px;
+}
+/* line 160, /home/fedex/code/apcvc/app/assets/stylesheets/layout.css.scss */
+body#application_body #about {
+  font-size: larger;
+}
+/* line 164, /home/fedex/code/apcvc/app/assets/stylesheets/layout.css.scss */
+body#application_body #about p:hover {
+  font-style: italic;
+}
+/* line 170, /home/fedex/code/apcvc/app/assets/stylesheets/layout.css.scss */
+body#application_body #about p:nth-child(even) {
+  padding: 8px 180px 8px 80px;
+  text-align: left;
+  color: #453452;
+}
+/* line 179, /home/fedex/code/apcvc/app/assets/stylesheets/layout.css.scss */
+body#application_body #about p:nth-child(even) {
+  padding: 8px 80px 8px 180px;
+  text-align: right;
+  color: #C62F29;
+}
+/* line 188, /home/fedex/code/apcvc/app/assets/stylesheets/layout.css.scss */
+body#application_body #jornada-contenido {
+  padding: 15px 130px;
+}
+/* line 191, /home/fedex/code/apcvc/app/assets/stylesheets/layout.css.scss */
+body#application_body #jornada-contenido #costs-table {
+  width: 90%;
+  margin: auto;
+  border: 3px solid #EA9B88;
+  -moz-border-radius: 15px;
+  -webkit-border-radius: 15px;
+  border-radius: 15px;
+}
+/* line 197, /home/fedex/code/apcvc/app/assets/stylesheets/layout.css.scss */
+body#application_body #jornada-contenido #costs-table th {
+  background-color: #974835;
+}
+/* line 204, /home/fedex/code/apcvc/app/assets/stylesheets/layout.css.scss */
+body#application_body #jornada-contenido #costs-table tr:nth-child(even) {
+  background-color: #CA897A;
+}
+/* line 208, /home/fedex/code/apcvc/app/assets/stylesheets/layout.css.scss */
+body#application_body #jornada-contenido #costs-table tr:nth-child(odd) {
+  background-color: #DCBDB6;
+}
+/* line 212, /home/fedex/code/apcvc/app/assets/stylesheets/layout.css.scss */
+body#application_body #jornada-contenido #costs-table td {
+  max-width: 400px;
+  vertical-align: middle;
+  padding: 10px;
+}
+
+/* line 1, /home/fedex/code/apcvc/app/assets/stylesheets/calendar.css.scss */
+.calendar_selector {
+  margin: 10px auto;
+  text-align: center;
+}
+/* line 5, /home/fedex/code/apcvc/app/assets/stylesheets/calendar.css.scss */
+.calendar_selector span {
+  width: 400px;
+  padding: 2px 20px;
+  color: #D55A12;
+  text-shadow: #000000 1px 1px 0px;
+  text-align: center;
+  margin: 5px auto 30px auto;
+}
+/* line 14, /home/fedex/code/apcvc/app/assets/stylesheets/calendar.css.scss */
+.calendar_selector .link {
+  border: 1px solid #aaaaaa;
+  padding: 2px 20px;
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzdmYjRjNiIvPjxzdG9wIG9mZnNldD0iNTAlIiBzdG9wLWNvbG9yPSIjNDg2Yzc4Ii8+PHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjNDI2NDZmIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmFkKSIgLz48L3N2Zz4g');
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #7fb4c6), color-stop(50%, #486c78), color-stop(100%, #42646f));
+  background-image: -moz-linear-gradient(#7fb4c6, #486c78, #42646f);
+  background-image: -webkit-linear-gradient(#7fb4c6, #486c78, #42646f);
+  background-image: linear-gradient(#7fb4c6, #486c78, #42646f);
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  font-size: large;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+/* line 24, /home/fedex/code/apcvc/app/assets/stylesheets/calendar.css.scss */
+.calendar_selector .link:hover {
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzViYTBiNyIvPjxzdG9wIG9mZnNldD0iNTAlIiBzdG9wLWNvbG9yPSIjM2U1ZTY4Ii8+PHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjMmY0NzRmIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmFkKSIgLz48L3N2Zz4g');
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #5ba0b7), color-stop(50%, #3e5e68), color-stop(100%, #2f474f));
+  background-image: -moz-linear-gradient(#5ba0b7, #3e5e68, #2f474f);
+  background-image: -webkit-linear-gradient(#5ba0b7, #3e5e68, #2f474f);
+  background-image: linear-gradient(#5ba0b7, #3e5e68, #2f474f);
+}
+/* line 29, /home/fedex/code/apcvc/app/assets/stylesheets/calendar.css.scss */
+.calendar_selector .title {
+  font-size: x-large;
+}
+
+/* line 34, /home/fedex/code/apcvc/app/assets/stylesheets/calendar.css.scss */
+.calendar {
+  border-collapse: collapse;
+  width: 100%;
+}
+/* line 38, /home/fedex/code/apcvc/app/assets/stylesheets/calendar.css.scss */
+.calendar td, .calendar th {
+  font-family: "Lucida Grande", arial, helvetica, sans-serif;
+  font-size: 10px;
+  padding: 6px;
+  border: 1px solid #999;
+}
+/* line 45, /home/fedex/code/apcvc/app/assets/stylesheets/calendar.css.scss */
+.calendar th {
+  background: #DDD;
+  color: #666;
+  text-align: center;
+  width: 14.2857142857143%;
+}
+/* line 52, /home/fedex/code/apcvc/app/assets/stylesheets/calendar.css.scss */
+.calendar td {
+  background: #FFF;
+  color: #777;
+  height: 80px;
+  vertical-align: top;
+  font-size: 16px;
+}
+/* line 58, /home/fedex/code/apcvc/app/assets/stylesheets/calendar.css.scss */
+.calendar td:hover {
+  background: url(/assets/nistri.png);
+}
+/* line 63, /home/fedex/code/apcvc/app/assets/stylesheets/calendar.css.scss */
+.calendar .notmonth {
+  color: #A9A9A9;
+  background-color: #DEDEDE;
+}
+/* line 66, /home/fedex/code/apcvc/app/assets/stylesheets/calendar.css.scss */
+.calendar .notmonth:hover {
+  background: url(/assets/nistri.png);
+  background-color: #A9A9A9;
+}
+/* line 71, /home/fedex/code/apcvc/app/assets/stylesheets/calendar.css.scss */
+.calendar .today {
+  background-color: #D7F2FF;
+}
+/* line 73, /home/fedex/code/apcvc/app/assets/stylesheets/calendar.css.scss */
+.calendar .today:hover {
+  background: url(/assets/nistri.png);
+  background-color: #D7F2FF;
+}
+/* line 79, /home/fedex/code/apcvc/app/assets/stylesheets/calendar.css.scss */
+.calendar .calendar_event {
+  background-color: #3D4785;
+  border: 2px solid #2F3660;
+  color: white;
+  font-size: 13px;
+  margin: 2px;
+  text-align: center;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+}
+/* line 87, /home/fedex/code/apcvc/app/assets/stylesheets/calendar.css.scss */
+.calendar .calendar_event a:link {
+  color: white;
+  text-decoration: none;
+}
+/* line 88, /home/fedex/code/apcvc/app/assets/stylesheets/calendar.css.scss */
+.calendar .calendar_event a:visited {
+  color: white;
+  text-decoration: none;
+}
+/* line 89, /home/fedex/code/apcvc/app/assets/stylesheets/calendar.css.scss */
+.calendar .calendar_event a:hover {
+  color: white;
+  text-decoration: none;
+}
+/* line 90, /home/fedex/code/apcvc/app/assets/stylesheets/calendar.css.scss */
+.calendar .calendar_event a:active {
+  color: white;
+  text-decoration: none;
+}
+/* line 94, /home/fedex/code/apcvc/app/assets/stylesheets/calendar.css.scss */
+.calendar .calendar_event:hover {
+  font-weight: bold;
+}
+
+/* line 101, /home/fedex/code/apcvc/app/assets/stylesheets/calendar.css.scss */
+.event-show {
+  margin: 5px auto;
+  width: 90%;
+  max-width: 800px;
+  height: auto;
+}
+/* line 107, /home/fedex/code/apcvc/app/assets/stylesheets/calendar.css.scss */
+.event-show .event_title {
+  float: left;
+  font-size: large;
+  color: #A8382D;
+}
+/* line 113, /home/fedex/code/apcvc/app/assets/stylesheets/calendar.css.scss */
+.event-show .event_time {
+  font-size: large;
+  float: right;
+  color: #A8382D;
+}
+/* line 119, /home/fedex/code/apcvc/app/assets/stylesheets/calendar.css.scss */
+.event-show .poster {
+  width: 100%;
+  height: auto;
+  border: 2px solid #858585;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+/* line 125, /home/fedex/code/apcvc/app/assets/stylesheets/calendar.css.scss */
+.event-show .poster[title]:hover:after {
+  content: attr(title);
+  padding: 4px 8px;
+  color: #333;
+}
+/* line 131, /home/fedex/code/apcvc/app/assets/stylesheets/calendar.css.scss */
+.event-show .event_content {
+  margin-left: 50px;
+  -moz-border-radius: 15px;
+  -webkit-border-radius: 15px;
+  border-radius: 15px;
+  padding: 20px;
+  border: 2px solid #A8382D;
+  background-color: rgba(6, 26, 88, 0.2);
+}
+
+/* line 140, /home/fedex/code/apcvc/app/assets/stylesheets/calendar.css.scss */
+#calendar_message {
+  float: right;
+  display: inline-block;
+  text-align: right;
+  text-decoration: italic;
+  font-weight: bold;
+  color: #000000;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  padding: 2px;
+}
+
+/* line 1, /home/fedex/code/apcvc/app/assets/stylesheets/forms.css.scss */
+form, .form-actions {
+  width: 50%;
+  margin: 10px auto;
+}
+/* line 4, /home/fedex/code/apcvc/app/assets/stylesheets/forms.css.scss */
+form .field, .form-actions .field {
+  padding: 10px;
+}
+/* line 6, /home/fedex/code/apcvc/app/assets/stylesheets/forms.css.scss */
+form .field input, form .field label, form .field textarea, .form-actions .field input, .form-actions .field label, .form-actions .field textarea {
+  display: block;
+  max-width: 100%;
+}
+/* line 12, /home/fedex/code/apcvc/app/assets/stylesheets/forms.css.scss */
+form .field-inline, .form-actions .field-inline {
+  padding: 10px;
+}
+/* line 14, /home/fedex/code/apcvc/app/assets/stylesheets/forms.css.scss */
+form .field-inline input, form .field-inline label, form .field-inline textarea, .form-actions .field-inline input, .form-actions .field-inline label, .form-actions .field-inline textarea {
+  display: inline;
+  max-width: 100%;
+}
+
+/* line 22, /home/fedex/code/apcvc/app/assets/stylesheets/forms.css.scss */
+form.new_message textarea {
+  height: 250px;
+  width: 450px;
+}
+
+/* line 2, /home/fedex/code/apcvc/app/assets/stylesheets/scrollbars.css.scss */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* line 5, /home/fedex/code/apcvc/app/assets/stylesheets/scrollbars.css.scss */
+::-webkit-scrollbar-button {
+  width: 8px;
+  height: 5px;
+}
+
+/* line 9, /home/fedex/code/apcvc/app/assets/stylesheets/scrollbars.css.scss */
+::-webkit-scrollbar-track {
+  background: #eee;
+  border: thin solid lightgray;
+  box-shadow: 0px 0px 3px #dfdfdf inset;
+  border-radius: 10px;
+}
+
+/* line 15, /home/fedex/code/apcvc/app/assets/stylesheets/scrollbars.css.scss */
+::-webkit-scrollbar-thumb {
+  background: #91b2b7;
+  border: thin solid #4f7479;
+  border-radius: 10px;
+}
+
+/* line 20, /home/fedex/code/apcvc/app/assets/stylesheets/scrollbars.css.scss */
+::-webkit-scrollbar-thumb:hover {
+  background: #598389;
+}
+
+/* line 1, /home/fedex/code/apcvc/app/assets/stylesheets/formacion.css.scss */
+.formacion {
+  padding: 10px 50px;
+}
+/* line 4, /home/fedex/code/apcvc/app/assets/stylesheets/formacion.css.scss */
+.formacion span {
+  font-size: large;
+  color: #A8382D;
+  font-style: italic;
+  font-weight: bold;
+}
+/* line 11, /home/fedex/code/apcvc/app/assets/stylesheets/formacion.css.scss */
+.formacion .form-content {
+  margin-top: 2px;
+  margin-bottom: 20px;
+  margin-left: 50px;
+  -moz-border-radius: 15px;
+  -webkit-border-radius: 15px;
+  border-radius: 15px;
+  padding: 20px;
+  border: 2px solid #A8382D;
+  background-color: rgba(6, 26, 88, 0.2);
+}
+/* line 20, /home/fedex/code/apcvc/app/assets/stylesheets/formacion.css.scss */
+.formacion .form-content dl > dt {
+  color: #713731;
+  font-weight: bold;
+  margin-top: 8px;
+}
+
+/* line 1, /home/fedex/code/apcvc/app/assets/stylesheets/tramas.css.scss */
+.tramas-article {
+  margin: 25px 50px;
+  -moz-border-radius: 15px;
+  -webkit-border-radius: 15px;
+  border-radius: 15px;
+  padding: 20px;
+  border: 2px solid #A8382D;
+  background-color: rgba(6, 26, 88, 0.2);
+}
+/* line 8, /home/fedex/code/apcvc/app/assets/stylesheets/tramas.css.scss */
+.tramas-article p.center {
+  padding: 8px 80px 8px 180px;
+  text-align: center;
+  color: #26474E;
+}
+/* line 14, /home/fedex/code/apcvc/app/assets/stylesheets/tramas.css.scss */
+.tramas-article .video {
+  border: 2px solid #A8382D;
+  background-color: #9A9870;
+  width: 420;
+  margin: 10px auto;
+  padding: 7px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+/* line 23, /home/fedex/code/apcvc/app/assets/stylesheets/tramas.css.scss */
+.tramas-article .essay-authors {
+  color: #A8382D;
+  text-shadow: #ffffff 1px 1px 0px;
+}
+/* line 26, /home/fedex/code/apcvc/app/assets/stylesheets/tramas.css.scss */
+.tramas-article .essay-authors li {
+  font-weight: bold;
+}
+
+/* line 32, /home/fedex/code/apcvc/app/assets/stylesheets/tramas.css.scss */
+.about-tramas {
+  cursor: pointer;
+}
+/* line 35, /home/fedex/code/apcvc/app/assets/stylesheets/tramas.css.scss */
+.about-tramas h2 {
+  display: inline;
+  text-align: center;
+}
+/* line 40, /home/fedex/code/apcvc/app/assets/stylesheets/tramas.css.scss */
+.about-tramas p.info {
+  display: inline;
+  font-size: small;
+  color: #707070;
+}
+
+/*
+ * Table styles
+ */
+/* line 4, /home/fedex/.rvm/gems/ruby-2.2.0/bundler/gems/jquery-datatables-rails-9b427794b9af/app/assets/stylesheets/dataTables/jquery.dataTables.css.scss */
+table.dataTable {
+  width: 100%;
+  margin: 0 auto;
+  clear: both;
+  border-collapse: separate;
+  border-spacing: 0;
+  /*
+   * Header and footer styles
+   */
+  /*
+   * Body styles
+   */
+}
+
+/* line 17, /home/fedex/.rvm/gems/ruby-2.2.0/bundler/gems/jquery-datatables-rails-9b427794b9af/app/assets/stylesheets/dataTables/jquery.dataTables.css.scss */
+table.dataTable thead th,
+table.dataTable tfoot th {
+  font-weight: bold;
+}
+
+/* line 21, /home/fedex/.rvm/gems/ruby-2.2.0/bundler/gems/jquery-datatables-rails-9b427794b9af/app/assets/stylesheets/dataTables/jquery.dataTables.css.scss */
+table.dataTable thead th,
+table.dataTable thead td {
+  padding: 10px 18px;
+  border-bottom: 1px solid #111111;
+}
+
+/* line 26, /home/fedex/.rvm/gems/ruby-2.2.0/bundler/gems/jquery-datatables-rails-9b427794b9af/app/assets/stylesheets/dataTables/jquery.dataTables.css.scss */
+table.dataTable thead th:active,
+table.dataTable thead td:active {
+  outline: none;
+}
+
+/* line 30, /home/fedex/.rvm/gems/ruby-2.2.0/bundler/gems/jquery-datatables-rails-9b427794b9af/app/assets/stylesheets/dataTables/jquery.dataTables.css.scss */
+table.dataTable tfoot th,
+table.dataTable tfoot td {
+  padding: 10px 18px 6px 18px;
+  border-top: 1px solid #111111;
+}
+
+/* line 35, /home/fedex/.rvm/gems/ruby-2.2.0/bundler/gems/jquery-datatables-rails-9b427794b9af/app/assets/stylesheets/dataTables/jquery.dataTables.css.scss */
+table.dataTable thead .sorting_asc,
+table.dataTable thead .sorting_desc,
+table.dataTable thead .sorting {
+  cursor: pointer;
+  *cursor: hand;
+}
+
+/* line 41, /home/fedex/.rvm/gems/ruby-2.2.0/bundler/gems/jquery-datatables-rails-9b427794b9af/app/assets/stylesheets/dataTables/jquery.dataTables.css.scss */
+table.dataTable thead .sorting {
+  background: url(/assets/dataTables/sort_both.png) no-repeat center right;
+}
+
+/* line 44, /home/fedex/.rvm/gems/ruby-2.2.0/bundler/gems/jquery-datatables-rails-9b427794b9af/app/assets/stylesheets/dataTables/jquery.dataTables.css.scss */
+table.dataTable thead .sorting_asc {
+  background: url(/assets/dataTables/sort_asc.png) no-repeat center right;
+}
+
+/* line 47, /home/fedex/.rvm/gems/ruby-2.2.0/bundler/gems/jquery-datatables-rails-9b427794b9af/app/assets/stylesheets/dataTables/jquery.dataTables.css.scss */
+table.dataTable thead .sorting_desc {
+  background: url(/assets/dataTables/sort_desc.png) no-repeat center right;
+}
+
+/* line 50, /home/fedex/.rvm/gems/ruby-2.2.0/bundler/gems/jquery-datatables-rails-9b427794b9af/app/assets/stylesheets/dataTables/jquery.dataTables.css.scss */
+table.dataTable thead .sorting_asc_disabled {
+  background: url(/assets/dataTables/sort_asc_disabled.png) no-repeat center right;
+}
+
+/* line 53, /home/fedex/.rvm/gems/ruby-2.2.0/bundler/gems/jquery-datatables-rails-9b427794b9af/app/assets/stylesheets/dataTables/jquery.dataTables.css.scss */
+table.dataTable thead .sorting_desc_disabled {
+  background: url(/assets/dataTables/sort_desc_disabled.png) no-repeat center right;
+}
+
+/* line 56, /home/fedex/.rvm/gems/ruby-2.2.0/bundler/gems/jquery-datatables-rails-9b427794b9af/app/assets/stylesheets/dataTables/jquery.dataTables.css.scss */
+table.dataTable tbody tr {
+  background-color: white;
+}
+
+/* line 59, /home/fedex/.rvm/gems/ruby-2.2.0/bundler/gems/jquery-datatables-rails-9b427794b9af/app/assets/stylesheets/dataTables/jquery.dataTables.css.scss */
+table.dataTable tbody tr.selected {
+  background-color: #b0bed9;
+}
+
+/* line 62, /home/fedex/.rvm/gems/ruby-2.2.0/bundler/gems/jquery-datatables-rails-9b427794b9af/app/assets/stylesheets/dataTables/jquery.dataTables.css.scss */
+table.dataTable tbody th,
+table.dataTable tbody td {
+  padding: 8px 10px;
+}
+
+/* line 66, /home/fedex/.rvm/gems/ruby-2.2.0/bundler/gems/jquery-datatables-rails-9b427794b9af/app/assets/stylesheets/dataTables/jquery.dataTables.css.scss */
+table.dataTable.row-border tbody th, table.dataTable.row-border tbody td, table.dataTable.display tbody th, table.dataTable.display tbody td {
+  border-top: 1px solid #dddddd;
+}
+
+/* line 69, /home/fedex/.rvm/gems/ruby-2.2.0/bundler/gems/jquery-datatables-rails-9b427794b9af/app/assets/stylesheets/dataTables/jquery.dataTables.css.scss */
+table.dataTable.row-border tbody tr:first-child th,
+table.dataTable.row-border tbody tr:first-child td, table.dataTable.display tbody tr:first-child th,
+table.dataTable.display tbody tr:first-child td {
+  border-top: none;
+}
+
+/* line 74, /home/fedex/.rvm/gems/ruby-2.2.0/bundler/gems/jquery-datatables-rails-9b427794b9af/app/assets/stylesheets/dataTables/jquery.dataTables.css.scss */
+table.dataTable.cell-border tbody th, table.dataTable.cell-border tbody td {
+  border-top: 1px solid #dddddd;
+  border-right: 1px solid #dddddd;
+}
+
+/* line 78, /home/fedex/.rvm/gems/ruby-2.2.0/bundler/gems/jquery-datatables-rails-9b427794b9af/app/assets/stylesheets/dataTables/jquery.dataTables.css.scss */
+table.dataTable.cell-border tbody tr th:first-child,
+table.dataTable.cell-border tbody tr td:first-child {
+  border-left: 1px solid #dddddd;
+}
+
+/* line 82, /home/fedex/.rvm/gems/ruby-2.2.0/bundler/gems/jquery-datatables-rails-9b427794b9af/app/assets/stylesheets/dataTables/jquery.dataTables.css.scss */
+table.dataTable.cell-border tbody tr:first-child th,
+table.dataTable.cell-border tbody tr:first-child td {
+  border-top: none;
+}
+
+/* line 86, /home/fedex/.rvm/gems/ruby-2.2.0/bundler/gems/jquery-datatables-rails-9b427794b9af/app/assets/stylesheets/dataTables/jquery.dataTables.css.scss */
+table.dataTable.stripe tbody tr.odd, table.dataTable.display tbody tr.odd {
+  background-color: #f9f9f9;
+}
+
+/* line 89, /home/fedex/.rvm/gems/ruby-2.2.0/bundler/gems/jquery-datatables-rails-9b427794b9af/app/assets/stylesheets/dataTables/jquery.dataTables.css.scss */
+table.dataTable.stripe tbody tr.odd.selected, table.dataTable.display tbody tr.odd.selected {
+  background-color: #abb9d3;
+}
+
+/* line 92, /home/fedex/.rvm/gems/ruby-2.2.0/bundler/gems/jquery-datatables-rails-9b427794b9af/app/assets/stylesheets/dataTables/jquery.dataTables.css.scss */
+table.dataTable.hover tbody tr:hover,
+table.dataTable.hover tbody tr.odd:hover,
+table.dataTable.hover tbody tr.even:hover, table.dataTable.display tbody tr:hover,
+table.dataTable.display tbody tr.odd:hover,
+table.dataTable.display tbody tr.even:hover {
+  background-color: whitesmoke;
+}
+
+/* line 99, /home/fedex/.rvm/gems/ruby-2.2.0/bundler/gems/jquery-datatables-rails-9b427794b9af/app/assets/stylesheets/dataTables/jquery.dataTables.css.scss */
+table.dataTable.hover tbody tr:hover.selected,
+table.dataTable.hover tbody tr.odd:hover.selected,
+table.dataTable.hover tbody tr.even:hover.selected, table.dataTable.display tbody tr:hover.selected,
+table.dataTable.display tbody tr.odd:hover.selected,
+table.dataTable.display tbody tr.even:hover.selected {
+  background-color: #a9b7d1;
+}
+
+/* line 106, /home/fedex/.rvm/gems/ruby-2.2.0/bundler/gems/jquery-datatables-rails-9b427794b9af/app/assets/stylesheets/dataTables/jquery.dataTables.css.scss */
+table.dataTable.order-column tbody tr > .sorting_1,
+table.dataTable.order-column tbody tr > .sorting_2,
+table.dataTable.order-column tbody tr > .sorting_3, table.dataTable.display tbody tr > .sorting_1,
+table.dataTable.display tbody tr > .sorting_2,
+table.dataTable.display tbody tr > .sorting_3 {
+  background-color: #f9f9f9;
+}
+
+/* line 113, /home/fedex/.rvm/gems/ruby-2.2.0/bundler/gems/jquery-datatables-rails-9b427794b9af/app/assets/stylesheets/dataTables/jquery.dataTables.css.scss */
+table.dataTable.order-column tbody tr.selected > .sorting_1,
+table.dataTable.order-column tbody tr.selected > .sorting_2,
+table.dataTable.order-column tbody tr.selected > .sorting_3, table.dataTable.display tbody tr.selected > .sorting_1,
+table.dataTable.display tbody tr.selected > .sorting_2,
+table.dataTable.display tbody tr.selected > .sorting_3 {
+  background-color: #acbad4;
+}
+
+/* line 120, /home/fedex/.rvm/gems/ruby-2.2.0/bundler/gems/jquery-datatables-rails-9b427794b9af/app/assets/stylesheets/dataTables/jquery.dataTables.css.scss */
+table.dataTable.display tbody tr.odd > .sorting_1, table.dataTable.order-column.stripe tbody tr.odd > .sorting_1 {
+  background-color: #f1f1f1;
+}
+
+/* line 123, /home/fedex/.rvm/gems/ruby-2.2.0/bundler/gems/jquery-datatables-rails-9b427794b9af/app/assets/stylesheets/dataTables/jquery.dataTables.css.scss */
+table.dataTable.display tbody tr.odd > .sorting_2, table.dataTable.order-column.stripe tbody tr.odd > .sorting_2 {
+  background-color: #f3f3f3;
+}
+
+/* line 126, /home/fedex/.rvm/gems/ruby-2.2.0/bundler/gems/jquery-datatables-rails-9b427794b9af/app/assets/stylesheets/dataTables/jquery.dataTables.css.scss */
+table.dataTable.display tbody tr.odd > .sorting_3, table.dataTable.order-column.stripe tbody tr.odd > .sorting_3 {
+  background-color: whitesmoke;
+}
+
+/* line 129, /home/fedex/.rvm/gems/ruby-2.2.0/bundler/gems/jquery-datatables-rails-9b427794b9af/app/assets/stylesheets/dataTables/jquery.dataTables.css.scss */
+table.dataTable.display tbody tr.odd.selected > .sorting_1, table.dataTable.order-column.stripe tbody tr.odd.selected > .sorting_1 {
+  background-color: #a6b3cd;
+}
+
+/* line 132, /home/fedex/.rvm/gems/ruby-2.2.0/bundler/gems/jquery-datatables-rails-9b427794b9af/app/assets/stylesheets/dataTables/jquery.dataTables.css.scss */
+table.dataTable.display tbody tr.odd.selected > .sorting_2, table.dataTable.order-column.stripe tbody tr.odd.selected > .sorting_2 {
+  background-color: #a7b5ce;
+}
+
+/* line 135, /home/fedex/.rvm/gems/ruby-2.2.0/bundler/gems/jquery-datatables-rails-9b427794b9af/app/assets/stylesheets/dataTables/jquery.dataTables.css.scss */
+table.dataTable.display tbody tr.odd.selected > .sorting_3, table.dataTable.order-column.stripe tbody tr.odd.selected > .sorting_3 {
+  background-color: #a9b6d0;
+}
+
+/* line 138, /home/fedex/.rvm/gems/ruby-2.2.0/bundler/gems/jquery-datatables-rails-9b427794b9af/app/assets/stylesheets/dataTables/jquery.dataTables.css.scss */
+table.dataTable.display tbody tr.even > .sorting_1, table.dataTable.order-column.stripe tbody tr.even > .sorting_1 {
+  background-color: #f9f9f9;
+}
+
+/* line 141, /home/fedex/.rvm/gems/ruby-2.2.0/bundler/gems/jquery-datatables-rails-9b427794b9af/app/assets/stylesheets/dataTables/jquery.dataTables.css.scss */
+table.dataTable.display tbody tr.even > .sorting_2, table.dataTable.order-column.stripe tbody tr.even > .sorting_2 {
+  background-color: #fbfbfb;
+}
+
+/* line 144, /home/fedex/.rvm/gems/ruby-2.2.0/bundler/gems/jquery-datatables-rails-9b427794b9af/app/assets/stylesheets/dataTables/jquery.dataTables.css.scss */
+table.dataTable.display tbody tr.even > .sorting_3, table.dataTable.order-column.stripe tbody tr.even > .sorting_3 {
+  background-color: #fdfdfd;
+}
+
+/* line 147, /home/fedex/.rvm/gems/ruby-2.2.0/bundler/gems/jquery-datatables-rails-9b427794b9af/app/assets/stylesheets/dataTables/jquery.dataTables.css.scss */
+table.dataTable.display tbody tr.even.selected > .sorting_1, table.dataTable.order-column.stripe tbody tr.even.selected > .sorting_1 {
+  background-color: #acbad4;
+}
+
+/* line 150, /home/fedex/.rvm/gems/ruby-2.2.0/bundler/gems/jquery-datatables-rails-9b427794b9af/app/assets/stylesheets/dataTables/jquery.dataTables.css.scss */
+table.dataTable.display tbody tr.even.selected > .sorting_2, table.dataTable.order-column.stripe tbody tr.even.selected > .sorting_2 {
+  background-color: #adbbd6;
+}
+
+/* line 153, /home/fedex/.rvm/gems/ruby-2.2.0/bundler/gems/jquery-datatables-rails-9b427794b9af/app/assets/stylesheets/dataTables/jquery.dataTables.css.scss */
+table.dataTable.display tbody tr.even.selected > .sorting_3, table.dataTable.order-column.stripe tbody tr.even.selected > .sorting_3 {
+  background-color: #afbdd8;
+}
+
+/* line 156, /home/fedex/.rvm/gems/ruby-2.2.0/bundler/gems/jquery-datatables-rails-9b427794b9af/app/assets/stylesheets/dataTables/jquery.dataTables.css.scss */
+table.dataTable.display tbody tr:hover > .sorting_1,
+table.dataTable.display tbody tr.odd:hover > .sorting_1,
+table.dataTable.display tbody tr.even:hover > .sorting_1, table.dataTable.order-column.hover tbody tr:hover > .sorting_1,
+table.dataTable.order-column.hover tbody tr.odd:hover > .sorting_1,
+table.dataTable.order-column.hover tbody tr.even:hover > .sorting_1 {
+  background-color: #eaeaea;
+}
+
+/* line 163, /home/fedex/.rvm/gems/ruby-2.2.0/bundler/gems/jquery-datatables-rails-9b427794b9af/app/assets/stylesheets/dataTables/jquery.dataTables.css.scss */
+table.dataTable.display tbody tr:hover > .sorting_2,
+table.dataTable.display tbody tr.odd:hover > .sorting_2,
+table.dataTable.display tbody tr.even:hover > .sorting_2, table.dataTable.order-column.hover tbody tr:hover > .sorting_2,
+table.dataTable.order-column.hover tbody tr.odd:hover > .sorting_2,
+table.dataTable.order-column.hover tbody tr.even:hover > .sorting_2 {
+  background-color: #ebebeb;
+}
+
+/* line 170, /home/fedex/.rvm/gems/ruby-2.2.0/bundler/gems/jquery-datatables-rails-9b427794b9af/app/assets/stylesheets/dataTables/jquery.dataTables.css.scss */
+table.dataTable.display tbody tr:hover > .sorting_3,
+table.dataTable.display tbody tr.odd:hover > .sorting_3,
+table.dataTable.display tbody tr.even:hover > .sorting_3, table.dataTable.order-column.hover tbody tr:hover > .sorting_3,
+table.dataTable.order-column.hover tbody tr.odd:hover > .sorting_3,
+table.dataTable.order-column.hover tbody tr.even:hover > .sorting_3 {
+  background-color: #eeeeee;
+}
+
+/* line 177, /home/fedex/.rvm/gems/ruby-2.2.0/bundler/gems/jquery-datatables-rails-9b427794b9af/app/assets/stylesheets/dataTables/jquery.dataTables.css.scss */
+table.dataTable.display tbody tr:hover.selected > .sorting_1,
+table.dataTable.display tbody tr.odd:hover.selected > .sorting_1,
+table.dataTable.display tbody tr.even:hover.selected > .sorting_1, table.dataTable.order-column.hover tbody tr:hover.selected > .sorting_1,
+table.dataTable.order-column.hover tbody tr.odd:hover.selected > .sorting_1,
+table.dataTable.order-column.hover tbody tr.even:hover.selected > .sorting_1 {
+  background-color: #a1aec7;
+}
+
+/* line 184, /home/fedex/.rvm/gems/ruby-2.2.0/bundler/gems/jquery-datatables-rails-9b427794b9af/app/assets/stylesheets/dataTables/jquery.dataTables.css.scss */
+table.dataTable.display tbody tr:hover.selected > .sorting_2,
+table.dataTable.display tbody tr.odd:hover.selected > .sorting_2,
+table.dataTable.display tbody tr.even:hover.selected > .sorting_2, table.dataTable.order-column.hover tbody tr:hover.selected > .sorting_2,
+table.dataTable.order-column.hover tbody tr.odd:hover.selected > .sorting_2,
+table.dataTable.order-column.hover tbody tr.even:hover.selected > .sorting_2 {
+  background-color: #a2afc8;
+}
+
+/* line 191, /home/fedex/.rvm/gems/ruby-2.2.0/bundler/gems/jquery-datatables-rails-9b427794b9af/app/assets/stylesheets/dataTables/jquery.dataTables.css.scss */
+table.dataTable.display tbody tr:hover.selected > .sorting_3,
+table.dataTable.display tbody tr.odd:hover.selected > .sorting_3,
+table.dataTable.display tbody tr.even:hover.selected > .sorting_3, table.dataTable.order-column.hover tbody tr:hover.selected > .sorting_3,
+table.dataTable.order-column.hover tbody tr.odd:hover.selected > .sorting_3,
+table.dataTable.order-column.hover tbody tr.even:hover.selected > .sorting_3 {
+  background-color: #a4b2cb;
+}
+
+/* line 198, /home/fedex/.rvm/gems/ruby-2.2.0/bundler/gems/jquery-datatables-rails-9b427794b9af/app/assets/stylesheets/dataTables/jquery.dataTables.css.scss */
+table.dataTable.no-footer {
+  border-bottom: 1px solid #111111;
+}
+
+/* line 201, /home/fedex/.rvm/gems/ruby-2.2.0/bundler/gems/jquery-datatables-rails-9b427794b9af/app/assets/stylesheets/dataTables/jquery.dataTables.css.scss */
+table.dataTable.nowrap th, table.dataTable.nowrap td {
+  white-space: nowrap;
+}
+
+/* line 204, /home/fedex/.rvm/gems/ruby-2.2.0/bundler/gems/jquery-datatables-rails-9b427794b9af/app/assets/stylesheets/dataTables/jquery.dataTables.css.scss */
+table.dataTable.compact thead th,
+table.dataTable.compact thead td {
+  padding: 5px 9px;
+}
+
+/* line 208, /home/fedex/.rvm/gems/ruby-2.2.0/bundler/gems/jquery-datatables-rails-9b427794b9af/app/assets/stylesheets/dataTables/jquery.dataTables.css.scss */
+table.dataTable.compact tfoot th,
+table.dataTable.compact tfoot td {
+  padding: 5px 9px 3px 9px;
+}
+
+/* line 212, /home/fedex/.rvm/gems/ruby-2.2.0/bundler/gems/jquery-datatables-rails-9b427794b9af/app/assets/stylesheets/dataTables/jquery.dataTables.css.scss */
+table.dataTable.compact tbody th,
+table.dataTable.compact tbody td {
+  padding: 4px 5px;
+}
+
+/* line 216, /home/fedex/.rvm/gems/ruby-2.2.0/bundler/gems/jquery-datatables-rails-9b427794b9af/app/assets/stylesheets/dataTables/jquery.dataTables.css.scss */
+table.dataTable th.dt-left,
+table.dataTable td.dt-left {
+  text-align: left;
+}
+
+/* line 220, /home/fedex/.rvm/gems/ruby-2.2.0/bundler/gems/jquery-datatables-rails-9b427794b9af/app/assets/stylesheets/dataTables/jquery.dataTables.css.scss */
+table.dataTable th.dt-center,
+table.dataTable td.dt-center,
+table.dataTable td.dataTables_empty {
+  text-align: center;
+}
+
+/* line 225, /home/fedex/.rvm/gems/ruby-2.2.0/bundler/gems/jquery-datatables-rails-9b427794b9af/app/assets/stylesheets/dataTables/jquery.dataTables.css.scss */
+table.dataTable th.dt-right,
+table.dataTable td.dt-right {
+  text-align: right;
+}
+
+/* line 229, /home/fedex/.rvm/gems/ruby-2.2.0/bundler/gems/jquery-datatables-rails-9b427794b9af/app/assets/stylesheets/dataTables/jquery.dataTables.css.scss */
+table.dataTable th.dt-justify,
+table.dataTable td.dt-justify {
+  text-align: justify;
+}
+
+/* line 233, /home/fedex/.rvm/gems/ruby-2.2.0/bundler/gems/jquery-datatables-rails-9b427794b9af/app/assets/stylesheets/dataTables/jquery.dataTables.css.scss */
+table.dataTable th.dt-nowrap,
+table.dataTable td.dt-nowrap {
+  white-space: nowrap;
+}
+
+/* line 237, /home/fedex/.rvm/gems/ruby-2.2.0/bundler/gems/jquery-datatables-rails-9b427794b9af/app/assets/stylesheets/dataTables/jquery.dataTables.css.scss */
+table.dataTable thead th.dt-head-left,
+table.dataTable thead td.dt-head-left,
+table.dataTable tfoot th.dt-head-left,
+table.dataTable tfoot td.dt-head-left {
+  text-align: left;
+}
+
+/* line 243, /home/fedex/.rvm/gems/ruby-2.2.0/bundler/gems/jquery-datatables-rails-9b427794b9af/app/assets/stylesheets/dataTables/jquery.dataTables.css.scss */
+table.dataTable thead th.dt-head-center,
+table.dataTable thead td.dt-head-center,
+table.dataTable tfoot th.dt-head-center,
+table.dataTable tfoot td.dt-head-center {
+  text-align: center;
+}
+
+/* line 249, /home/fedex/.rvm/gems/ruby-2.2.0/bundler/gems/jquery-datatables-rails-9b427794b9af/app/assets/stylesheets/dataTables/jquery.dataTables.css.scss */
+table.dataTable thead th.dt-head-right,
+table.dataTable thead td.dt-head-right,
+table.dataTable tfoot th.dt-head-right,
+table.dataTable tfoot td.dt-head-right {
+  text-align: right;
+}
+
+/* line 255, /home/fedex/.rvm/gems/ruby-2.2.0/bundler/gems/jquery-datatables-rails-9b427794b9af/app/assets/stylesheets/dataTables/jquery.dataTables.css.scss */
+table.dataTable thead th.dt-head-justify,
+table.dataTable thead td.dt-head-justify,
+table.dataTable tfoot th.dt-head-justify,
+table.dataTable tfoot td.dt-head-justify {
+  text-align: justify;
+}
+
+/* line 261, /home/fedex/.rvm/gems/ruby-2.2.0/bundler/gems/jquery-datatables-rails-9b427794b9af/app/assets/stylesheets/dataTables/jquery.dataTables.css.scss */
+table.dataTable thead th.dt-head-nowrap,
+table.dataTable thead td.dt-head-nowrap,
+table.dataTable tfoot th.dt-head-nowrap,
+table.dataTable tfoot td.dt-head-nowrap {
+  white-space: nowrap;
+}
+
+/* line 267, /home/fedex/.rvm/gems/ruby-2.2.0/bundler/gems/jquery-datatables-rails-9b427794b9af/app/assets/stylesheets/dataTables/jquery.dataTables.css.scss */
+table.dataTable tbody th.dt-body-left,
+table.dataTable tbody td.dt-body-left {
+  text-align: left;
+}
+
+/* line 271, /home/fedex/.rvm/gems/ruby-2.2.0/bundler/gems/jquery-datatables-rails-9b427794b9af/app/assets/stylesheets/dataTables/jquery.dataTables.css.scss */
+table.dataTable tbody th.dt-body-center,
+table.dataTable tbody td.dt-body-center {
+  text-align: center;
+}
+
+/* line 275, /home/fedex/.rvm/gems/ruby-2.2.0/bundler/gems/jquery-datatables-rails-9b427794b9af/app/assets/stylesheets/dataTables/jquery.dataTables.css.scss */
+table.dataTable tbody th.dt-body-right,
+table.dataTable tbody td.dt-body-right {
+  text-align: right;
+}
+
+/* line 279, /home/fedex/.rvm/gems/ruby-2.2.0/bundler/gems/jquery-datatables-rails-9b427794b9af/app/assets/stylesheets/dataTables/jquery.dataTables.css.scss */
+table.dataTable tbody th.dt-body-justify,
+table.dataTable tbody td.dt-body-justify {
+  text-align: justify;
+}
+
+/* line 283, /home/fedex/.rvm/gems/ruby-2.2.0/bundler/gems/jquery-datatables-rails-9b427794b9af/app/assets/stylesheets/dataTables/jquery.dataTables.css.scss */
+table.dataTable tbody th.dt-body-nowrap,
+table.dataTable tbody td.dt-body-nowrap {
+  white-space: nowrap;
+}
+
+/* line 288, /home/fedex/.rvm/gems/ruby-2.2.0/bundler/gems/jquery-datatables-rails-9b427794b9af/app/assets/stylesheets/dataTables/jquery.dataTables.css.scss */
+table.dataTable,
+table.dataTable th,
+table.dataTable td {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+/*
+ * Control feature layout
+ */
+/* line 299, /home/fedex/.rvm/gems/ruby-2.2.0/bundler/gems/jquery-datatables-rails-9b427794b9af/app/assets/stylesheets/dataTables/jquery.dataTables.css.scss */
+.dataTables_wrapper {
+  position: relative;
+  clear: both;
+  *zoom: 1;
+  zoom: 1;
+}
+
+/* line 305, /home/fedex/.rvm/gems/ruby-2.2.0/bundler/gems/jquery-datatables-rails-9b427794b9af/app/assets/stylesheets/dataTables/jquery.dataTables.css.scss */
+.dataTables_wrapper .dataTables_length {
+  float: left;
+}
+
+/* line 308, /home/fedex/.rvm/gems/ruby-2.2.0/bundler/gems/jquery-datatables-rails-9b427794b9af/app/assets/stylesheets/dataTables/jquery.dataTables.css.scss */
+.dataTables_wrapper .dataTables_filter {
+  float: right;
+  text-align: right;
+}
+
+/* line 312, /home/fedex/.rvm/gems/ruby-2.2.0/bundler/gems/jquery-datatables-rails-9b427794b9af/app/assets/stylesheets/dataTables/jquery.dataTables.css.scss */
+.dataTables_wrapper .dataTables_filter input {
+  margin-left: 0.5em;
+}
+
+/* line 315, /home/fedex/.rvm/gems/ruby-2.2.0/bundler/gems/jquery-datatables-rails-9b427794b9af/app/assets/stylesheets/dataTables/jquery.dataTables.css.scss */
+.dataTables_wrapper .dataTables_info {
+  clear: both;
+  float: left;
+  padding-top: 0.755em;
+}
+
+/* line 320, /home/fedex/.rvm/gems/ruby-2.2.0/bundler/gems/jquery-datatables-rails-9b427794b9af/app/assets/stylesheets/dataTables/jquery.dataTables.css.scss */
+.dataTables_wrapper .dataTables_paginate {
+  float: right;
+  text-align: right;
+  padding-top: 0.25em;
+}
+
+/* line 325, /home/fedex/.rvm/gems/ruby-2.2.0/bundler/gems/jquery-datatables-rails-9b427794b9af/app/assets/stylesheets/dataTables/jquery.dataTables.css.scss */
+.dataTables_wrapper .dataTables_paginate .paginate_button {
+  box-sizing: border-box;
+  display: inline-block;
+  min-width: 1.5em;
+  padding: 0.5em 1em;
+  margin-left: 2px;
+  text-align: center;
+  text-decoration: none !important;
+  cursor: pointer;
+  *cursor: hand;
+  color: #333333 !important;
+  border: 1px solid transparent;
+}
+
+/* line 338, /home/fedex/.rvm/gems/ruby-2.2.0/bundler/gems/jquery-datatables-rails-9b427794b9af/app/assets/stylesheets/dataTables/jquery.dataTables.css.scss */
+.dataTables_wrapper .dataTables_paginate .paginate_button.current, .dataTables_wrapper .dataTables_paginate .paginate_button.current:hover {
+  color: #333333 !important;
+  border: 1px solid #cacaca;
+  background-color: white;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, white), color-stop(100%, gainsboro));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, white 0%, gainsboro 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -moz-linear-gradient(top, white 0%, gainsboro 100%);
+  /* FF3.6+ */
+  background: -ms-linear-gradient(top, white 0%, gainsboro 100%);
+  /* IE10+ */
+  background: -o-linear-gradient(top, white 0%, gainsboro 100%);
+  /* Opera 11.10+ */
+  background: linear-gradient(to bottom, #ffffff 0%, #dcdcdc 100%);
+  /* W3C */
+}
+
+/* line 355, /home/fedex/.rvm/gems/ruby-2.2.0/bundler/gems/jquery-datatables-rails-9b427794b9af/app/assets/stylesheets/dataTables/jquery.dataTables.css.scss */
+.dataTables_wrapper .dataTables_paginate .paginate_button.disabled, .dataTables_wrapper .dataTables_paginate .paginate_button.disabled:hover, .dataTables_wrapper .dataTables_paginate .paginate_button.disabled:active {
+  cursor: default;
+  color: #666 !important;
+  border: 1px solid transparent;
+  background: transparent;
+  box-shadow: none;
+}
+
+/* line 362, /home/fedex/.rvm/gems/ruby-2.2.0/bundler/gems/jquery-datatables-rails-9b427794b9af/app/assets/stylesheets/dataTables/jquery.dataTables.css.scss */
+.dataTables_wrapper .dataTables_paginate .paginate_button:hover {
+  color: white !important;
+  border: 1px solid #111111;
+  background-color: #585858;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #585858), color-stop(100%, #111111));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #585858 0%, #111111 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -moz-linear-gradient(top, #585858 0%, #111111 100%);
+  /* FF3.6+ */
+  background: -ms-linear-gradient(top, #585858 0%, #111111 100%);
+  /* IE10+ */
+  background: -o-linear-gradient(top, #585858 0%, #111111 100%);
+  /* Opera 11.10+ */
+  background: linear-gradient(to bottom, #585858 0%, #111111 100%);
+  /* W3C */
+}
+
+/* line 379, /home/fedex/.rvm/gems/ruby-2.2.0/bundler/gems/jquery-datatables-rails-9b427794b9af/app/assets/stylesheets/dataTables/jquery.dataTables.css.scss */
+.dataTables_wrapper .dataTables_paginate .paginate_button:active {
+  outline: none;
+  background-color: #2b2b2b;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #2b2b2b), color-stop(100%, #0c0c0c));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #2b2b2b 0%, #0c0c0c 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -moz-linear-gradient(top, #2b2b2b 0%, #0c0c0c 100%);
+  /* FF3.6+ */
+  background: -ms-linear-gradient(top, #2b2b2b 0%, #0c0c0c 100%);
+  /* IE10+ */
+  background: -o-linear-gradient(top, #2b2b2b 0%, #0c0c0c 100%);
+  /* Opera 11.10+ */
+  background: linear-gradient(to bottom, #2b2b2b 0%, #0c0c0c 100%);
+  /* W3C */
+  box-shadow: inset 0 0 3px #111;
+}
+
+/* line 396, /home/fedex/.rvm/gems/ruby-2.2.0/bundler/gems/jquery-datatables-rails-9b427794b9af/app/assets/stylesheets/dataTables/jquery.dataTables.css.scss */
+.dataTables_wrapper .dataTables_processing {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 40px;
+  margin-left: -50%;
+  margin-top: -25px;
+  padding-top: 20px;
+  text-align: center;
+  font-size: 1.2em;
+  background-color: white;
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(255, 255, 255, 0)), color-stop(25%, rgba(255, 255, 255, 0.9)), color-stop(75%, rgba(255, 255, 255, 0.9)), color-stop(100%, rgba(255, 255, 255, 0)));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.9) 25%, rgba(255, 255, 255, 0.9) 75%, rgba(255, 255, 255, 0) 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -moz-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.9) 25%, rgba(255, 255, 255, 0.9) 75%, rgba(255, 255, 255, 0) 100%);
+  /* FF3.6+ */
+  background: -ms-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.9) 25%, rgba(255, 255, 255, 0.9) 75%, rgba(255, 255, 255, 0) 100%);
+  /* IE10+ */
+  background: -o-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.9) 25%, rgba(255, 255, 255, 0.9) 75%, rgba(255, 255, 255, 0) 100%);
+  /* Opera 11.10+ */
+  background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.9) 25%, rgba(255, 255, 255, 0.9) 75%, rgba(255, 255, 255, 0) 100%);
+  /* W3C */
+}
+
+/* line 421, /home/fedex/.rvm/gems/ruby-2.2.0/bundler/gems/jquery-datatables-rails-9b427794b9af/app/assets/stylesheets/dataTables/jquery.dataTables.css.scss */
+.dataTables_wrapper .dataTables_length,
+.dataTables_wrapper .dataTables_filter,
+.dataTables_wrapper .dataTables_info,
+.dataTables_wrapper .dataTables_processing,
+.dataTables_wrapper .dataTables_paginate {
+  color: #333333;
+}
+
+/* line 428, /home/fedex/.rvm/gems/ruby-2.2.0/bundler/gems/jquery-datatables-rails-9b427794b9af/app/assets/stylesheets/dataTables/jquery.dataTables.css.scss */
+.dataTables_wrapper .dataTables_scroll {
+  clear: both;
+}
+
+/* line 431, /home/fedex/.rvm/gems/ruby-2.2.0/bundler/gems/jquery-datatables-rails-9b427794b9af/app/assets/stylesheets/dataTables/jquery.dataTables.css.scss */
+.dataTables_wrapper .dataTables_scroll div.dataTables_scrollBody {
+  *margin-top: -1px;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* line 435, /home/fedex/.rvm/gems/ruby-2.2.0/bundler/gems/jquery-datatables-rails-9b427794b9af/app/assets/stylesheets/dataTables/jquery.dataTables.css.scss */
+.dataTables_wrapper .dataTables_scroll div.dataTables_scrollBody th > div.dataTables_sizing,
+.dataTables_wrapper .dataTables_scroll div.dataTables_scrollBody td > div.dataTables_sizing {
+  height: 0;
+  overflow: hidden;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* line 442, /home/fedex/.rvm/gems/ruby-2.2.0/bundler/gems/jquery-datatables-rails-9b427794b9af/app/assets/stylesheets/dataTables/jquery.dataTables.css.scss */
+.dataTables_wrapper.no-footer .dataTables_scrollBody {
+  border-bottom: 1px solid #111111;
+}
+
+/* line 445, /home/fedex/.rvm/gems/ruby-2.2.0/bundler/gems/jquery-datatables-rails-9b427794b9af/app/assets/stylesheets/dataTables/jquery.dataTables.css.scss */
+.dataTables_wrapper.no-footer div.dataTables_scrollHead table,
+.dataTables_wrapper.no-footer div.dataTables_scrollBody table {
+  border-bottom: none;
+}
+
+/* line 449, /home/fedex/.rvm/gems/ruby-2.2.0/bundler/gems/jquery-datatables-rails-9b427794b9af/app/assets/stylesheets/dataTables/jquery.dataTables.css.scss */
+.dataTables_wrapper:after {
+  visibility: hidden;
+  display: block;
+  content: '';
+  clear: both;
+  height: 0;
+}
+
+@media screen and (max-width: 767px) {
+  /* line 458, /home/fedex/.rvm/gems/ruby-2.2.0/bundler/gems/jquery-datatables-rails-9b427794b9af/app/assets/stylesheets/dataTables/jquery.dataTables.css.scss */
+  .dataTables_wrapper .dataTables_info,
+  .dataTables_wrapper .dataTables_paginate {
+    float: none;
+    text-align: center;
+  }
+
+  /* line 463, /home/fedex/.rvm/gems/ruby-2.2.0/bundler/gems/jquery-datatables-rails-9b427794b9af/app/assets/stylesheets/dataTables/jquery.dataTables.css.scss */
+  .dataTables_wrapper .dataTables_paginate {
+    margin-top: 0.5em;
+  }
+}
+@media screen and (max-width: 640px) {
+  /* line 468, /home/fedex/.rvm/gems/ruby-2.2.0/bundler/gems/jquery-datatables-rails-9b427794b9af/app/assets/stylesheets/dataTables/jquery.dataTables.css.scss */
+  .dataTables_wrapper .dataTables_length,
+  .dataTables_wrapper .dataTables_filter {
+    float: none;
+    text-align: center;
+  }
+
+  /* line 473, /home/fedex/.rvm/gems/ruby-2.2.0/bundler/gems/jquery-datatables-rails-9b427794b9af/app/assets/stylesheets/dataTables/jquery.dataTables.css.scss */
+  .dataTables_wrapper .dataTables_filter {
+    margin-top: 0.5em;
+  }
+}
+/* line 1, /home/fedex/code/apcvc/app/assets/stylesheets/institutional_life.css.scss */
+.album {
+  margin: 15px 50px;
+  -moz-border-radius: 15px;
+  -webkit-border-radius: 15px;
+  border-radius: 15px;
+  padding: 20px;
+  border: 2px solid #A8382D;
+  background-color: rgba(6, 26, 88, 0.2);
+  display: inline-block;
+}
+/* line 9, /home/fedex/code/apcvc/app/assets/stylesheets/institutional_life.css.scss */
+.album .photo {
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  padding: 5px 5px 12px 5px;
+  background-color: white;
+  width: auto;
+  height: 50px;
+  border: 1px solid black;
+}
+
+/*
+ *= require_tree .
+*/
+/* line 1, /home/fedex/code/apcvc/app/assets/stylesheets/datepicker.css */
+.ui-datepicker {
+  background-color: white;
+  padding: 5px;
+  border: 1px solid #313131;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+
+/* line 8, /home/fedex/code/apcvc/app/assets/stylesheets/datepicker.css */
+.ui-datepicker-today {
+  background-color: #e5e5e5;
+}
+
+/* line 13, /home/fedex/code/apcvc/app/assets/stylesheets/datepicker.css */
+.ui-datepicker-calendar td:hover {
+  background-color: #5E63E2;
+}
+
+/* line 1, /home/fedex/code/apcvc/app/assets/stylesheets/secretarias.css.scss */
+#seclist {
+  display: block;
+  width: 90%;
+  position: relative;
+  padding: 60px 0 60px 0;
+  background: url(/assets/shad2.png) no-repeat;
+  -moz-background-size: 50% 100%;
+  -o-background-size: 50% 100%;
+  -webkit-background-size: 50% 100%;
+  background-size: 50% 100%;
+}
+/* line 9, /home/fedex/code/apcvc/app/assets/stylesheets/secretarias.css.scss */
+#seclist span {
+  -moz-border-radius-topright: 10px;
+  -webkit-border-top-right-radius: 10px;
+  border-top-right-radius: 10px;
+  -moz-border-radius-bottomright: 10px;
+  -webkit-border-bottom-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  font-size: large;
+  margin-top: 5px;
+  -moz-transition: all, 0.3s, ease-out 1s;
+  -o-transition: all, 0.3s, ease-out 1s;
+  -webkit-transition: all, 0.3s, ease-out 1s;
+  transition: all 0.3s ease-out 1s;
+  background: #cbcbcb url(/assets/border.png) no-repeat;
+  color: #174867;
+  padding: 0px 15px 0px 15px;
+  width: 70%;
+  display: block;
+  text-decoration: none;
+  -moz-box-shadow: #888 2px 2px 4px;
+  -webkit-box-shadow: #888 2px 2px 4px;
+  box-shadow: #888 2px 2px 4px;
+}
+/* line 23, /home/fedex/code/apcvc/app/assets/stylesheets/secretarias.css.scss */
+#seclist span:hover {
+  background: #ebebeb url(/assets/border.png) no-repeat;
+  color: #67a5cd;
+  padding: 0px 15px 0px 30px;
+}
+/* line 29, /home/fedex/code/apcvc/app/assets/stylesheets/secretarias.css.scss */
+#seclist .sec-content {
+  margin-left: 50px;
+  -moz-border-radius: 15px;
+  -webkit-border-radius: 15px;
+  border-radius: 15px;
+  padding: 20px;
+  border: 2px solid #A8382D;
+  background-color: rgba(6, 26, 88, 0.2);
+}
+
+/* line 1, /home/fedex/code/apcvc/app/assets/stylesheets/admin.css.scss */
+.login-info {
+  float: right;
+}
+
+/* line 6, /home/fedex/code/apcvc/app/assets/stylesheets/admin.css.scss */
+.admin_actions a {
+  border: 1px solid #aaaaaa;
+  padding: 5px 3px;
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzdmYjRjNiIvPjxzdG9wIG9mZnNldD0iNTAlIiBzdG9wLWNvbG9yPSIjNDg2Yzc4Ii8+PHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjNDI2NDZmIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmFkKSIgLz48L3N2Zz4g');
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #7fb4c6), color-stop(50%, #486c78), color-stop(100%, #42646f));
+  background-image: -moz-linear-gradient(#7fb4c6, #486c78, #42646f);
+  background-image: -webkit-linear-gradient(#7fb4c6, #486c78, #42646f);
+  background-image: linear-gradient(#7fb4c6, #486c78, #42646f);
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  font-size: small;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  /* &:not(:last-child):after{ */
+  /*   content: " | "; */
+  /* } */
+}
+/* line 16, /home/fedex/code/apcvc/app/assets/stylesheets/admin.css.scss */
+.admin_actions a:hover {
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzViYTBiNyIvPjxzdG9wIG9mZnNldD0iNTAlIiBzdG9wLWNvbG9yPSIjM2U1ZTY4Ii8+PHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjMmY0NzRmIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmFkKSIgLz48L3N2Zz4g');
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #5ba0b7), color-stop(50%, #3e5e68), color-stop(100%, #2f474f));
+  background-image: -moz-linear-gradient(#5ba0b7, #3e5e68, #2f474f);
+  background-image: -webkit-linear-gradient(#5ba0b7, #3e5e68, #2f474f);
+  background-image: linear-gradient(#5ba0b7, #3e5e68, #2f474f);
+}
+
+/* line 1, /home/fedex/code/apcvc/app/assets/stylesheets/settings.css.scss */
+.settings {
+  padding: 10px 20px;
+}
+/* line 4, /home/fedex/code/apcvc/app/assets/stylesheets/settings.css.scss */
+.settings .form {
+  margin-top: 2px;
+  margin-bottom: 20px;
+  margin-left: 50px;
+  -moz-border-radius: 15px;
+  -webkit-border-radius: 15px;
+  border-radius: 15px;
+  padding: 10px;
+  border: 2px solid #A8382D;
+  background-color: rgba(6, 26, 88, 0.2);
+}
+/* line 13, /home/fedex/code/apcvc/app/assets/stylesheets/settings.css.scss */
+.settings .form dl > dt {
+  color: #713731;
+  font-weight: bold;
+  margin-top: 8px;
+}
+
+/* line 1, /home/fedex/code/apcvc/app/assets/stylesheets/development.css.scss */
+.red {
+  background-color: red !important;
+}
+
+/* line 5, /home/fedex/code/apcvc/app/assets/stylesheets/development.css.scss */
+.green {
+  background-color: green !important;
+}
+
+/* line 9, /home/fedex/code/apcvc/app/assets/stylesheets/development.css.scss */
+.blue {
+  background-color: blue !important;
+}
+
+/* line 13, /home/fedex/code/apcvc/app/assets/stylesheets/development.css.scss */
+.yellow {
+  background-color: yellow !important;
+}
