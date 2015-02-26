@@ -1,7 +1,9 @@
 = actions do
   = link_to 'Editar evento', edit_event_path(@event)
+  = link_to "Eliminar", event_path(@event), confirm: "Esté seguro que desea eliminar este evento?", method: :delete
 
 = render @event
 
 = actions do
   = link_to 'Editar evento', edit_event_path(@event)
+  = link_to "Eliminar", event_path(@event), confirm: "Esté seguro que desea eliminar este evento?", method: :delete

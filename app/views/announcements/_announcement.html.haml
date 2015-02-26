@@ -1,6 +1,7 @@
 %hr/
 = actions do
   = link_to "Editar", edit_announcement_path(announcement)
+  = link_to "Eliminar", announcement_path(announcement), confirm: "Esté seguro que desea eliminar este anuncio?", method: :delete
 .announcement
   %h2= announcement.title
   .event_date
