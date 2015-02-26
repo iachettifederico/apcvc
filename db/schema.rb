@@ -16,7 +16,7 @@ ActiveRecord::Schema.define(version: 20140308215720) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "admins", force: true do |t|
+  create_table "admins", force: :cascade do |t|
     t.string   "email",                  default: "", null: false
     t.string   "encrypted_password",     default: "", null: false
     t.string   "reset_password_token"
@@ -34,7 +34,7 @@ ActiveRecord::Schema.define(version: 20140308215720) do
   add_index "admins", ["email"], name: "index_admins_on_email", unique: true, using: :btree
   add_index "admins", ["reset_password_token"], name: "index_admins_on_reset_password_token", unique: true, using: :btree
 
-  create_table "announcements", force: true do |t|
+  create_table "announcements", force: :cascade do |t|
     t.string   "title"
     t.text     "content"
     t.date     "from_date"
@@ -44,7 +44,7 @@ ActiveRecord::Schema.define(version: 20140308215720) do
     t.datetime "updated_at"
   end
 
-  create_table "books", force: true do |t|
+  create_table "books", force: :cascade do |t|
     t.string   "title"
     t.string   "author"
     t.string   "code"
@@ -54,7 +54,7 @@ ActiveRecord::Schema.define(version: 20140308215720) do
     t.datetime "updated_at"
   end
 
-  create_table "dir_comissions", force: true do |t|
+  create_table "dir_comissions", force: :cascade do |t|
     t.integer  "order"
     t.string   "name"
     t.string   "position"
@@ -63,7 +63,7 @@ ActiveRecord::Schema.define(version: 20140308215720) do
     t.datetime "updated_at"
   end
 
-  create_table "essays", force: true do |t|
+  create_table "essays", force: :cascade do |t|
     t.string   "title"
     t.string   "document"
     t.string   "authors"
@@ -72,7 +72,7 @@ ActiveRecord::Schema.define(version: 20140308215720) do
     t.datetime "updated_at"
   end
 
-  create_table "events", force: true do |t|
+  create_table "events", force: :cascade do |t|
     t.string   "title"
     t.date     "date"
     t.text     "content"
@@ -83,7 +83,7 @@ ActiveRecord::Schema.define(version: 20140308215720) do
     t.boolean  "announcement"
   end
 
-  create_table "secretaries", force: true do |t|
+  create_table "secretaries", force: :cascade do |t|
     t.integer  "order"
     t.string   "key"
     t.string   "name"
@@ -92,7 +92,7 @@ ActiveRecord::Schema.define(version: 20140308215720) do
     t.datetime "updated_at"
   end
 
-  create_table "settings", force: true do |t|
+  create_table "settings", force: :cascade do |t|
     t.integer  "order"
     t.string   "key"
     t.text     "value"
@@ -103,7 +103,7 @@ ActiveRecord::Schema.define(version: 20140308215720) do
     t.string   "title"
   end
 
-  create_table "trainings", force: true do |t|
+  create_table "trainings", force: :cascade do |t|
     t.integer  "order"
     t.string   "key"
     t.string   "title"
@@ -112,7 +112,7 @@ ActiveRecord::Schema.define(version: 20140308215720) do
     t.datetime "updated_at"
   end
 
-  create_table "videos", force: true do |t|
+  create_table "videos", force: :cascade do |t|
     t.string   "title"
     t.string   "url"
     t.datetime "pubdate"
