@@ -2,7 +2,7 @@ $placeholdeer-color: #221DA5;
 
 body#application_body{
  // @include background(image-url("fondover.jpg") );
-  background-image: url('fondover.jpg');
+  background-image: url('/fondover.jpg');
   #content{
     margin: 55px auto 15px auto;
     overflow: auto;
