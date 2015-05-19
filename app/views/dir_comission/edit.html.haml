@@ -8,7 +8,7 @@
     = number_field_tag "comission[#{i}][order]", p.order
     %br
 
-    = label_tag "comission[#{i}][position]", "Posición"
+    = label_tag "comission[#{i}][position]", "Posición", as: :integer
     = text_field_tag "comission[#{i}][position]", p.position
     %br
 

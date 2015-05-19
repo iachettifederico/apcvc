@@ -8,16 +8,24 @@ class DirComissionController < ApplicationController
   end
 
   def edit
-    comission = DirComission.order(:order)
+    comission = DirComission.order(:order) + [DirComission.new]
 
     render "edit", locals: { comission: comission}
   end
 
   def update
-    new_comission = params["comission"].map { |i, h| h }
+    new_comission = comission_params #.map { |i, h| h }
     DirComission.destroy_all
-    DirComission.create(new_comission)
+    new_comission.each do |_, new_params|
+      unless new_params.all?{ |_, v| v.empty?}
+        DirComission.create(new_params)
+      end
+    end
 
     redirect_to edit_dir_comission_path, notice: "Comisión actualizada correctamente"
+  end
+
+  def comission_params
+    params.require("comission").permit!
   end
 end
